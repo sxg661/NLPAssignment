@@ -99,7 +99,7 @@ def find_named_entities(sent):
     return extract_entities(parse_tree)
 
 
-def classifiy(named_entitiy):
+def classify(named_entitiy):
     #I haven't implented this function.
     #I intend to classify the entity using wikification
     #for now I'll just return name so that I can
@@ -108,55 +108,16 @@ def classifiy(named_entitiy):
 
 
 
-def check_match(current_run, named_entity):
-    ne_tokens = TweetTokenizer().tokenize(named_entity)
-    i = 0
-    while i < len(current_run) and i < len(ne_tokens):
-        if current_run[i] != ne_tokens[i]:
-            return "no match"
-        i += 1
-    #(we don't need to worry about if it is more than this,
-    #because the current run will be detected at not a match before
-    #it gets that long)
-    if len(current_run) < len(ne_tokens):
-        return "partial match"
-    else:
-        return "match"
 
-def get_tag_locations(words, named_entities):
-    #finds the locations that different tags have to go in
-    #doesn't work yet
-    tag_locations = []
-    for i in range(len(words)):
-        for ne in named_entities:
-            print(words[i])
-            word_run = []
-            word_run.append(words[i])
-            j = i + 1
-            print(join(word_run) + " : " + check_match(word_run,ne[0]))
-            while check_match(word_run,ne[0])== "partial match" and j < len(words):
-                word_run = word_run.append(words[j])
-                j += 1
-            if check_match(word_run,ne[0]) == "match":
-                tag_locations.append( ((i,j-1),ne[1]) )
-    return tag_locations
-    
+
 def tag_named_entities(sent, named_entities):
-    #THIS FUNCTION IS INCOMPLETE
-    #this function takes the classified named entities
-    #and builds new sentence with the tags in place
-    
-    #splits the sentence into seperate words
-    tknzr = TweetTokenizer()
-    words = tknzr.tokenize(sent)
-
-    #records the start index of the current run if there is one
-    start_run_index = -1
-
-    #stores the locations to put all the tag pairs
-    tag_locations = []
-    
-               
+    for entity in named_entities:
+        entity_type = classify(entity)
+        if entity_type != "undefined":
+            tag = "<{}>".format(entity_type)
+            sent= sent.replace(entity, "{}{}{}".format(tag,entity,tag))
+    return sent
+              
            
         
         
