@@ -1,0 +1,9 @@
+1. Classification for strict and non-strict grammars: entities classified as either speakers or locations with both strict grammar (everything the grammar picks up is a named entity but it doesn't find all the named entities) and non-strict grammar (picks up all the named entities but also unnecessary stuff). Define defaults depending on how the entity was found for strict grammar (default would be speaker) and non-strict grammar (if already found by strict grammar or undefined then ignore it). + TIMES LATER
+
+2. Change tagging function
+
+3. Discern sentences: see what was produced by the tokenizer, tag named entities and times in it and for each token we determine whether it's a sentence or not
+
+4. Paragraphs: which sentences go together
+
+5. Integration
