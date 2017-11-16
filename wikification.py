@@ -93,7 +93,6 @@ def lose_tags(tag_string):
     #>Aikaterini<
     #then all we need to do is trim the first and later characters off of this
     #(the .* basically means any number of character any number of times)
-    print(tag_string)
     pattern = re.compile(">.*<")
     tagless = pattern.findall(tag_string)[0]
     return trim_first_last(tagless)
@@ -120,6 +119,8 @@ def get_tag_examples(tag_name, data):
     #removes the tags from every single match
     matches_notags = []
     for match in matches:
+        #we'll just get rid of newlines now to make everything easier
+        match = match.replace("\n"," ")
         matches_notags.append(lose_tags(match))
     
     return matches_notags
@@ -132,7 +133,11 @@ def build_single_file_vocab(tag_name, data):
 
     words = []
 
+    #we need this to help calculate our prior probabilities
+    #for bayes later on
+
     for entity in tag_examples:
+        
         words = words + get_words(entity)
 
     return words
@@ -155,26 +160,70 @@ def read_file(path, file):
     return data
 
 
-def build_training_vocab(tag_name, path):
+def build_training_vocab(tag_name):
+    path = "training/"
     #gets all our file path
-    files = get_files(path)
+    #I only took the first 20 otherwise we're going to be here all day
+    #(This code code isn't very efficient)
+    files = get_files(path)[:20]
     
     #this will contain all the words we get from wikipedia
     vocab = []
 
+
     #for all our file paths, we can get the data from the files
     #run all of them through the build_single_file_vocab() function
     #and add to our vocab
+
     for file in files:
         data = read_file(path,file)
         vocab = vocab + build_single_file_vocab(tag_name, data)
 
+
     return vocab
+
+
+def get_word_dict(word_array):
+    wordDict = {}
+    for word in word_array:
+        if word in wordDict:
+            wordDict[word] += 1
+        else:
+            wordDict[word] = 1
+    return wordDict
+
+def build_dictionaries_and_vocabs(tag_names):
+    #this will be a two dimenisional array contiaining the vocab
+    #the dictionary of entities and the number of entities discovered
+    dictionaires = []
+    for tag_name in tag_names:
+        word_array = build_training_vocab(tag_name)
+        dictionaries.add([get_word_dict(word_array
         
+    return 
     
+    
+def naive_bayes(sentence, logPrior, vocab, classDict, classWords):
+    sumProbs = logPrior
+    for word in sentence:
+        if word in vocab:
+            sumProbs += log_likelihood(word, vocab, classDict, classWords)
+    return sumProbs
+        
+        
+        
+
+def log_likelihood(word, vocab, classDict, classWords):
+    count_word_in_class = 0
+    if word in classDict:
+        count_word_in_class = classDict[word]
+    else: count_word_in_class = 0
+
+    prob_in_class = (count_word_in_class + 1) / ( len(set(classWords) ) + len(vocab) )
+    return math.log10(prob_in_class)
     
 
-            
+
     
 
 
