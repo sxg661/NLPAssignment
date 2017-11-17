@@ -5,6 +5,7 @@ from nltk.tokenize import TweetTokenizer
 import re
 from os                 import listdir
 from os.path            import isfile, join
+import math
 
 
     
@@ -135,6 +136,7 @@ def get_tag_examples(tag_name, data, tag_dict):
     return matches_notags, tag_dict
 
 def build_single_file_vocab(tag_name, data, tag_dict):
+    print("entered")
     #takes all the entities with a certain tag name from one string of data from a single file
     #then it goes on wikipedia and gets all the words that come up when you search that string
 
@@ -147,7 +149,7 @@ def build_single_file_vocab(tag_name, data, tag_dict):
 
     for entity in tag_examples:
         
-        words = words + get_words(entity, tag_dict)
+        words = words + get_words(entity)
 
     return words, tag_dict
 
@@ -169,15 +171,15 @@ def read_file(path, file):
     return data
 
 
-def build_training_vocab(tag_names):
+def build_training_vocabs(tag_names):
     path = "training/"
     #gets all our file path
     #I only took the first 20 otherwise we're going to be here all day
     #(This code code isn't very efficient)
-    files = get_files(path)[:20]
+    files = get_files(path)[:30]
     
     #this will contain all the words we get from wikipedia
-    vocab = []
+    vocabs = {}
 
     #this will contain info about all the tags we find
     tag_dict = {}
@@ -190,46 +192,20 @@ def build_training_vocab(tag_names):
     for file in files:
         data = read_file(path,file)
         for tag_name in tag_names:
-            extra_vocab, tag_dict = build_single_file_vocab(tag_name, data)
-            vocab = vocab + extra_vocab
+            tag_vocab, tag_dict = build_single_file_vocab(tag_name, data, tag_dict)
+            if tag_name in vocabs:
+                vocabs[tag_name] = vocabs[tag_name] + tag_vocab
+            else: vocabs[tag_name] = tag_vocab
+            
 
 
-    return vocab, tag_dict
-#NEED TO CHANGE FUNCTIONS PAST THIS POINT
+    return vocabs, Counter(tag_dict.values())
 
 
 
 #Counter(<dictionary_name>.values())
 #Counter(<list_name>)
-def get_word_dict(word_array):
-    wordDict = {}
-    for word in word_array:
-        if word in wordDict:
-            wordDict[word] += 1
-        else:
-            wordDict[word] = 1
-    return wordDict
 
-def build_dictionaries_and_vocabs(tag_names):
-    #this will be a two dimenisional array contiaining the vocab
-    #the dictionary of entities and the number of entities discovered
-    dictionaires = []
-    for tag_name in tag_names:
-        word_array = build_training_vocab(tag_name)
-        dictionaries.add([get_word_dict(word_array
-        
-    return 
-    
-    
-def naive_bayes(sentence, logPrior, vocab, classDict, classWords):
-    sumProbs = logPrior
-    for word in sentence:
-        if word in vocab:
-            sumProbs += log_likelihood(word, vocab, classDict, classWords)
-    return sumProbs
-        
-        
-        
 
 def log_likelihood(word, vocab, classDict, classWords):
     count_word_in_class = 0
@@ -239,6 +215,54 @@ def log_likelihood(word, vocab, classDict, classWords):
 
     prob_in_class = (count_word_in_class + 1) / ( len(set(classWords) ) + len(vocab) )
     return math.log10(prob_in_class)
+
+
+def naive_bayes(wiki_words, logPrior, vocab, classDict, classWords):
+    sumProbs = logPrior
+    for word in wiki_words:
+        if word in vocab:
+            sumProbs += log_likelihood(word, vocab, classDict, classWords)
+    return sumProbs
+
+
+def classify(entity, vocabs, tag_occurances, tag_names):
+
+    
+    current_max = [None,None]
+
+    number_tags = 0
+    vocab = []
+    for tag_name in tag_names:
+        number_tags += tag_occurances[tag_name]
+        vocab = vocab + vocabs[tag_name]
+    vocab = set(vocab)
+
+    
+
+    for tag_name in tag_names:
+        wiki_words = get_words(entity)
+        logPrior = math.log10(tag_occurances[tag_name] / number_tags)
+        classDict = Counter(vocabs[tag_name])
+        classWords = vocabs[tag_name]
+        sumProbs = naive_bayes(wiki_words,logPrior,vocab,classDict,classWords)
+        if current_max[1] == None or current_max[1] < sumProbs:
+            current_max = [tag_name,sumProbs]
+
+    return current_max[0]
+        
+        
+    
+def classify_test(entity):
+    tag_names = ["speaker","location"]
+    vocabs, tag_occurances = build_training_vocabs(tag_names)
+    return classify(entity,vocabs,tag_occurances,tag_names)
+    
+tag_names0 = ["speaker","location"]
+vocabs0,tag_occurances0    = build_training_vocabs(tag_names0)
+
+        
+        
+        
     
 
 
