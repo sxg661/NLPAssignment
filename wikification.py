@@ -1,5 +1,6 @@
 import sys, http.client, urllib.request, urllib.parse, urllib.error, json
 from nltk.corpus        import names
+from collections         import Counter
 from nltk.tokenize import TweetTokenizer
 import re
 from os                 import listdir
@@ -98,7 +99,7 @@ def lose_tags(tag_string):
     return trim_first_last(tagless)
     
 
-def get_tag_examples(tag_name, data):
+def get_tag_examples(tag_name, data, tag_dict):
     #takes the data from a file and finds all the specific tagged entities
 
     #gets rid of all the "</sentence>" because they sometimes overlap with
@@ -121,15 +122,23 @@ def get_tag_examples(tag_name, data):
     for match in matches:
         #we'll just get rid of newlines now to make everything easier
         match = match.replace("\n"," ")
-        matches_notags.append(lose_tags(match))
-    
-    return matches_notags
+        match_nt = lose_tags(match)
+        matches_notags.append(match_nt)
 
-def build_single_file_vocab(tag_name, data):
+        #adds this tag to the dictionary
+        #the while loop makes sure we get a unique key which isn't
+        #in the dictionary (keep adding zs until it's not in there)
+        while match_nt in tag_dict:
+            match_nt = match_nt + "z"
+        tag_dict[match_nt] = tag_name
+    
+    return matches_notags, tag_dict
+
+def build_single_file_vocab(tag_name, data, tag_dict):
     #takes all the entities with a certain tag name from one string of data from a single file
     #then it goes on wikipedia and gets all the words that come up when you search that string
 
-    tag_examples = get_tag_examples(tag_name, data)
+    tag_examples, tag_dict = get_tag_examples(tag_name, data, tag_dict)
 
     words = []
 
@@ -138,13 +147,13 @@ def build_single_file_vocab(tag_name, data):
 
     for entity in tag_examples:
         
-        words = words + get_words(entity)
+        words = words + get_words(entity, tag_dict)
 
-    return words
+    return words, tag_dict
 
 
 def get_files(path):
-    #gets the files paths to the training data
+    #gets the file paths to the training data
     files = [f for f in listdir(path) if isfile(join(path, f))]
     try :
         del( files[files.index( '.DS_Store' )] )
@@ -160,7 +169,7 @@ def read_file(path, file):
     return data
 
 
-def build_training_vocab(tag_name):
+def build_training_vocab(tag_names):
     path = "training/"
     #gets all our file path
     #I only took the first 20 otherwise we're going to be here all day
@@ -170,6 +179,9 @@ def build_training_vocab(tag_name):
     #this will contain all the words we get from wikipedia
     vocab = []
 
+    #this will contain info about all the tags we find
+    tag_dict = {}
+
 
     #for all our file paths, we can get the data from the files
     #run all of them through the build_single_file_vocab() function
@@ -177,12 +189,18 @@ def build_training_vocab(tag_name):
 
     for file in files:
         data = read_file(path,file)
-        vocab = vocab + build_single_file_vocab(tag_name, data)
+        for tag_name in tag_names:
+            extra_vocab, tag_dict = build_single_file_vocab(tag_name, data)
+            vocab = vocab + extra_vocab
 
 
-    return vocab
+    return vocab, tag_dict
+#NEED TO CHANGE FUNCTIONS PAST THIS POINT
 
 
+
+#Counter(<dictionary_name>.values())
+#Counter(<list_name>)
 def get_word_dict(word_array):
     wordDict = {}
     for word in word_array:
