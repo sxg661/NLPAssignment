@@ -73,7 +73,7 @@ def naive_bayes(wiki_words, logPrior, vocab, classDict, classWords):
             sumProbs += log_likelihood(word, vocab, classDict, classWords)
     return sumProbs
 
-class CurrentMaxInfo:
+class ResultInfo:
     def __init__(self, tag_name, sumProb):
         self.tag_name = tag_name
         self.sumProb = sumProb
@@ -101,7 +101,9 @@ def classify(entity, vocabs, tag_occurances, tag_names):
     vocab = set(vocab)
 
     #contains the current most likely classification
-    current_max = CurrentMaxInfo(None,None)
+    current_max = ResultInfo(None,None)
+    #so that we can tell how close it is, we also want to return the 2nd max
+    current_second_max = ResultInfo(None,None)
 
     for tag_name in tag_names:
         #gets all the paramters for naive bayes
@@ -113,11 +115,17 @@ def classify(entity, vocabs, tag_occurances, tag_names):
         #performs naive bayes on each one and updates the current_max accordingly
         sumProb = naive_bayes(wiki_words,logPrior,vocab,classDict,classWords)
         if current_max.get_sumProb() == None or sumProb > current_max.get_sumProb():
-            current_max = CurrentMaxInfo(tag_name,sumProb)
+            
+            current_second_max = ResultInfo(current_max.get_tag_name(), current_max.get_sumProb())
+            current_max = ResultInfo(tag_name,sumProb)
+                                            
+        elif current_second_max.get_sumProb() == None or sumProb > current_second_max.get_sumProb():
+                                            
+            current_second_max = ResultInfo(tag_name, sumProb)
 
-    return current_max.get_tag_name()
 
-tag_names = ["speaker","location"]
-vocabs0, tag_occurances = build_training_vocabs(tag_names)
+    return current_max, current_second_max
+
+
 
 
