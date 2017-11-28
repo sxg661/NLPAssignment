@@ -1,3 +1,5 @@
+package Database;
+
 import java.sql.Connection;
 import java.util.Random;
 import java.sql.DriverManager;
@@ -9,45 +11,34 @@ import java.util.Scanner;
 public class CreateDB {
 	
 	private int[] cid = new int[2000];
-	private int[] jid = new int[120];
-	private int[] gid = new int[120];
-	private int[] hid = new int[120];
+	private int[] jid = new int[200];
+	private int[] gid = new int[200];
+	private int[] hid = new int[200];
 	private int[] crackersaleprice = new int[2000];
 	private int[] crackerquantity = new int[2000];
-	private int[] royalties = new int[120];
-	private int[] giftprice = new int[120];
-	private int[] hatprice = new int[120];
+	private int[] royalties = new int[200];
+	private int[] giftprice = new int[200];
+	private int[] hatprice = new int[200];
 	private String[] names = new String[2000];
 	private String[] crackerqueries = new String[2000];
-	private String[] jokequeries = new String[2000];
-	private String[] giftqueries = new String[2000];
-	private String[] hatqueries = new String[2000];
+	private String[] jokequeries = new String[200];
+	private String[] giftqueries = new String[200];
+	private String[] hatqueries = new String[200];
 	private String[] dropqueries = {"DROP TABLE Cracker", "DROP TABLE Joke", "DROP TABLE Gift", "DROP TABLE Hat"};
-	private String[] jokes = new String[120];
-	private String[] gifts = new String[120];
-	private String[] hats = new String[120];
-	
+	private String[] jokes = new String[200];
+	private String[] gifts = new String[200];
+	private String[] hats = new String[200];
+	Random randomGenerator = new Random();
 	int j = 0;
 	int k = 0;
 	int b = 0;
-	int c = 0;
-	int d = 0;
-	int f = 0;
-	int h = 0;
 	int o = 0;
-	int y = 0;
 	int z = 0;
 	int u = 0;
-	int w = 0;
-	int ind1 = 0;
 	int ind3 = 0;
-	int ind5 = 0;
 	int ind6 = 0;
-	int ind7 = 0;
 	int ind9 = 0;
-	int ind11 = 0;
-	Random randomGenerator = new Random();
-
+	
 	public CreateDB() {
 		for (int i = 0; i < cid.length;i++) {
 			cid[i] = i;
@@ -181,28 +172,39 @@ public class CreateDB {
 	        System.out.println("Creating tables...");
 	        try {
 	        	String createCracker = "CREATE TABLE Cracker (" + 
-	        			"	cid	INTEGER		NOT NULL UNIQUE," + 
+	        			"	cid		INTEGER, " + 
 	        			"	name	CHAR(200)	NOT NULL, " +
-	        			"	jid	INTEGER		NOT NULL," + 
-	        			"	gid	INTEGER		NOT NULL," + 
-	        			"	hid	INTEGER		NOT NULL," + 
-	        			"	saleprice	INTEGER," +
-	        			"	quantity	INTEGER )";
+	        			"	jid		INTEGER		NOT NULL UNIQUE, " + 
+	        			"	gid		INTEGER		NOT NULL UNIQUE, " + 
+	        			"	hid		INTEGER		NOT NULL UNIQUE, " + 
+	        			"	saleprice	INTEGER		NOT NULL, " +
+	        			"	quantity	INTEGER		NOT NULL, "  +
+	        			" 	PRIMARY KEY (cid)" +
+	        			"	)";
 	        			
 	        	String createJoke = "CREATE TABLE Joke (" + 
-	        			"	jid	INTEGER		NOT NULL UNIQUE, " + 
+	        			"	jid		INTEGER, " + 
 	        			"	joke	VARCHAR(300), " +
-	        			"	royalty	INTEGER )";
+	        			"	royalty	INTEGER		NOT NULL, " +
+	        			" 	PRIMARY KEY (jid), " +
+	        			" 	FOREIGN KEY(jid) REFERENCES Cracker(jid) " +
+	        			" 	)";
 	        	
 	        	String createGift = "CREATE TABLE Gift (" + 
-	        			"	gid	INTEGER		NOT NULL UNIQUE, " +
+	        			"	gid				INTEGER, " +
 	        			"	giftdescription	VARCHAR(300), " +
-	        			"	price	INTEGER )"; 
+	        			"	price			INTEGER		NOT NULL, " +
+	        			" 	PRIMARY KEY (gid), " +
+	        			"	FOREIGN KEY(gid) REFERENCES Cracker(gid) " +
+	        			"	)";
 	        			
 	        	String createHat = "CREATE TABLE Hat (" + 
-	        			"	hid	INTEGER		NOT NULL UNIQUE, " + 
+	        			"	hid				INTEGER, " + 
 	        			"	hatdescription	VARCHAR(100), " +
-	        			"	price	INTEGER )";
+	        			"	price			INTEGER		NOT NULL, " +
+	        			" 	PRIMARY KEY(hid) " +
+	        			"	FOREIGN KEY (hid) REFERENCES Cracker(hid) " +
+	        			"	)";
 	        			
 	        	
 	        	
@@ -221,8 +223,8 @@ public class CreateDB {
 	 }
 	        
 	  public void makeQueries()	{
-	        	while (j < crackerqueries.length && k < names.length && b < jid.length && c < gid.length && d < hid.length && f < crackerqueries.length && h < crackerqueries.length) {
-	        		crackerqueries[j] = "INSERT INTO Cracker VALUES (" + cid[j] + ", " + "'" + names[k] + "'" + ", " + jid[b] + ", " + gid[c] + ", " + hid[d] + ", " + crackersaleprice[f] + ", " + crackerquantity[h] + ")";
+	        	while (j < crackerqueries.length && k < names.length && b < jid.length) {
+	        		crackerqueries[j] = "INSERT INTO Cracker VALUES (" + cid[j] + ", " + "'" + names[k] + "'" + ", " + jid[b] + ", " + gid[b] + ", " + hid[b] + ", " + crackersaleprice[j] + ", " + crackerquantity[j] + ")";
         			//System.out.println("List of Cracker queries: " + crackerqueries[j]);
         			j++;
         			if (k == names.length-1) {
@@ -237,79 +239,44 @@ public class CreateDB {
         			else {
         				b++;
         			}
-        			if (c == gid.length-1) {
-        				c = 0;
-        			}
-        			else {
-        				c++;
-        			}
-        			if (d == hid.length-1) {
-        				d = 0;
-        			}
-        			else {
-        				d++;
-        			}
-        			f++;
-        			h++;
 	        	}
 	        	
 	        	// making the joke insert queries
-	        	while (o < jokequeries.length && y < jid.length && z < jokes.length && ind1 < royalties.length) {
-	        		jokequeries[o] = "INSERT INTO Joke VALUES (" + jid[y] + ", " + "'" + jokes[z] + "' " + ", " + royalties[ind1] + ")";
+	        	while (o < jokequeries.length && z < jokes.length) {
+	        		jokequeries[o] = "INSERT INTO Joke VALUES (" + jid[o] + ", " + "'" + jokes[z] + "' " + ", " + royalties[z] + ")";
 	        		//System.out.println("List of Joke queries: " + jokequeries[o]);
 	        		o++;
-	        		y++;
 	        		if (z == jokes.length-1) {
 	        			z = 0;
 	        		}
 	        		else {
 	        			z++;
 	        		}
-	        		if (ind1 == royalties.length-1) {
-	        			ind1 = 0;
-	        		}
-	        		else {
-	        			ind1++;
-	        		}
 	        	}
 	        	
 	        	// making the gift insert queries
-	        	while (u < giftqueries.length && w < gid.length && ind3 < gifts.length && ind5 < giftprice.length) {
-	        		giftqueries[u] = "INSERT INTO Gift VALUES (" + gid[w] + ", " + "'" + gifts[ind3] + "'" + ", " + giftprice[ind5] + ")";
+	        	while (u < giftqueries.length && ind3 < gifts.length) {
+	        		giftqueries[u] = "INSERT INTO Gift VALUES (" + gid[u] + ", " + "'" + gifts[ind3] + "'" + ", " + giftprice[ind3] + ")";
 	        		//System.out.println("List of Gift queries: " + giftqueries[u]);
 	        		u++;
-	        		w++;
 	        		if (ind3 == gifts.length-1) {
 	        			ind3 = 0;
 	        		}
 	        		else {
 	        			ind3++;
 	        		}
-	        		if (ind5 == giftprice.length-1) {
-	        			ind5 = 0;
-	        		}
-	        		else {
-	        			ind5++;
-	        		}
 	        	}
 	        	
 	        	// making the hat insert queries
-	        	while (ind6 < hatqueries.length && ind7 < hid.length && ind9 < hats.length && ind11 < hatprice.length) {
-	        		hatqueries[ind6] = "INSERT INTO Hat VALUES (" + hid[ind7] + ", " + "'" + hats[ind9] + "'" + ", " + hatprice[ind11] + ")";
+	        	while (ind6 < hatqueries.length && ind9 < hats.length) {
+	        		hatqueries[ind6] = "INSERT INTO Hat VALUES (" + hid[ind6] + ", " + "'" + hats[ind9] + "'" + ", " + hatprice[ind9] + ")";
 	        		//System.out.println("List of Hat queries: " + hatqueries[ind6]);
 	        		ind6++;
-	        		ind7++;
 	        		if (ind9 == hats.length-1) {
 	        			ind9 = 0;
 	        		}
 	        		else {
 	        			ind9++;
-	        		}
-	        		if (ind11 == hatprice.length-1) {
-	        			ind11 = 0;
-	        		}
-	        		else {
-	        			ind11++;
 	        		}
 	        	}
 	  }
@@ -468,7 +435,7 @@ public class CreateDB {
 	     	}
 	     	}
 	     	catch(SQLException sqlE) {
-	     		System.out.println(sqlE);
+	     		System.out.println("The tables don't exist for them to be dropped!");
 	     	}
 		 }
 	  
