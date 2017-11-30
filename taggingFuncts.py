@@ -21,6 +21,7 @@ from os.path            import isfile, join
 
 import NamedEntityFindingFuncts
 import ClassificationFuncts
+import FileReadingFuncts
 
 
 
@@ -35,43 +36,113 @@ def get_named_entities(sent):
     return strict_entities, broad_entities
 
 
+#REMOVE THIS WHEN DONE TESTING
+def test_tagger(sent):
+    sent = TweetTokenizer().tokenize(sent)
+    train_sents = brown.tagged_sents()[:1000]
+    emma_taggery = NamedEntityFindingFuncts.backoff_tagger(train_sents, [UnigramTagger,BigramTagger, TrigramTagger])
+    name_taggery = NamedEntityFindingFuncts.NamesTagger(emma_taggery)
+    
+    return name_taggery.tag(sent)
 
     
+def remove_sub_strings(entity_dict):
+    #removes an entity if it is a substring of another entity that has been picked up
+    new_entity_dict = {}
 
+    entity_keys = entity_dict.keys()
     
+    for entity1 in entity_keys:
+        sub = False
+        for entity2 in entity_keys:
+            if entity1 in entity2 and entity1 != entity2:
+                sub = True
+        if not sub:
+            new_entity_dict[entity1] = entity_dict[entity1]
+
+    return new_entity_dict
 
 
-def classify(entitiy, strict):
-    tag_names = ["speaker","location"]
-    vocabs, tag_occurances = ClassificationFuncts.build_training_vocabs(tag_names)
+
+
+#MOVE TO CLASSIFY MODULE
+def classify__bayes(entity, strict, tag_names, vocabs, tag_occurances):
+
     best_match, second_match = ClassificationFuncts.classify(entity, vocabs, tag_occurances, tag_names)
    
     if strict:
         return best_match.get_tag_name()
     else:
-        if abs(best_match.get_sumProb - second_match.get_sumProb) > 30:
+        if abs(best_match.get_sumProb() - second_match.get_sumProb()) > 20:
             return best_match.get_tag_name()
         else: return None
         
     return "name"
 
+#MOVE TO CLASSIFY MODULE
+def classify__files(entity, tag_names, examples):
+    for tag_name in tag_names:
+        if entity in examples[tag_name]:
+            return tag_name
+    return None
+
+def get_examples(tag_name):
+    file = "tagFiles/{}.txt".format(tag_name)
+    examples = FileReadingFuncts.read_all_lines(file)
+    return examples
 
 
-
-
-def tag_named_entities(sent, named_entities):
-    for entity in named_entities:
-        entity_type = classify(entity)
-        if entity_type != "undefined":
-            tag = "<{}>".format(entity_type)
-            sent= sent.replace(entity, "{}{}{}".format(tag,entity,tag))
+def tag_entities(sent, entities):
+    for entity in entities.keys():
+        open_tag = "<{}>".format(entities[entity])
+        close_tag = "</{}>".format(entities[entity])
+        sent= sent.replace(entity, "{}{}{}".format(open_tag,entity,close_tag))
     return sent
-              
-           
-        
-        
-        
 
+
+           
+def tag_named_entities(sent):
+    strict_entities,broad_entities = get_named_entities(sent)
+
+    print(strict_entities)
+    print(broad_entities)
+
+    #MOVE THESE 2 LINES TO THE ACTUAL MAIN FUNCTION ONCE YOU'VE MADE IT!!!
+    tag_names = ["speaker","location"]
+    vocabs, tag_occurances = ClassificationFuncts.build_training_vocabs(tag_names)
+
+    examples = {}
+    for tag_name in tag_names:
+        examples[tag_name] = get_examples(tag_name)
+    
+    classified_entities = {}
+    
+    for entity in strict_entities:
+        ent_type = classify__files(entity, tag_names, examples)
+
+        if ent_type != None:
+            classified_entities[entity] = ent_type
+        else:
+            ent_type = classify__bayes(entity, True, tag_names, vocabs, tag_occurances)
+            classified_entities[entity] = ent_type
+
+    for entity in broad_entities:
+        ent_type = classify__files(entity, tag_names, examples)
+
+        if ent_type != None:
+            classified_entities[entity] = ent_type
+        else:
+            ent_type = classify__bayes(entity, False, tag_names, vocabs, tag_occurances)
+            if ent_type != None:
+                classified_entities[entity] = ent_type
+
+    classifed_entities = remove_sub_strings(classified_entities)
+
+    sent = tag_entities(sent, classified_entities)
+
+    return sent
+            
+        
 def main():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')

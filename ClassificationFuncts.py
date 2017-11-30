@@ -7,12 +7,20 @@ import re
 
 
 
-def build_single_file_vocab(tag_name, data, tag_dict):
+def get_examples(tag_name, tag_dict):
+    inputFile = tag_name + ".txt"
+    data = FileReadingFuncts.read_file("tagFiles/",inputFile)
+    examples, tag_dict = TagExtractingFuncts.get_tag_examples(tag_name, data, tag_dict)
+    return examples[:20], tag_dict
+
+
+
+def build_vocab(tag_name, tag_dict):
     print("entered")
     #takes all the entities with a certain tag name from one string of data from a single file
     #then it goes on wikipedia and gets all the words that come up when you search that string
 
-    tag_examples, tag_dict = TagExtractingFuncts.get_tag_examples(tag_name, data, tag_dict)
+    tag_examples, tag_dict = get_examples(tag_name, tag_dict)
 
     words = []
 
@@ -23,12 +31,9 @@ def build_single_file_vocab(tag_name, data, tag_dict):
 
     return words, tag_dict
 
+
+
 def build_training_vocabs(tag_names):
-    path = "training/"
-    #gets all our file path
-    #I only took the first 20 otherwise we're going to be here all day
-    #(This code code isn't very efficient)
-    files = FileReadingFuncts.get_files(path)[:30]
     
     #this will contain all the words we get from wikipedia
     vocabs = {}
@@ -37,20 +42,21 @@ def build_training_vocabs(tag_names):
     tag_dict = {}
 
 
-    #builds a vocab for each file and adds result to our main vocab
-
-    for file in files:
-        data = FileReadingFuncts.read_file(path,file)
-        for tag_name in tag_names:
-            tag_vocab, tag_dict = build_single_file_vocab(tag_name, data, tag_dict)
-            if tag_name in vocabs:
-                vocabs[tag_name] = vocabs[tag_name] + tag_vocab
-            else: vocabs[tag_name] = tag_vocab
+    #builds a vocab for each tag_name
+    #I've already extracted the tags with a function
+    #in FileWritingFuncts, so all we need to do is read the
+    #text file
+    for tag_name in tag_names:
+        tag_vocab, tag_dict = build_vocab(tag_name, tag_dict)
+        vocabs[tag_name] = tag_vocab
             
 
     #the values in the dictionary are that tag types, so we can use the Counter type to
     #store how many times each tag occured
     return vocabs, Counter(tag_dict.values())
+
+
+
 
 
 def log_likelihood(word, vocab, classDict, classWords):
@@ -112,8 +118,10 @@ def classify(entity, vocabs, tag_occurances, tag_names):
         classDict = Counter(vocabs[tag_name])
         classWords = vocabs[tag_name]
 
-        #performs naive bayes on each one and updates the current_max accordingly
+        #performs naive bayes updates the current max and second max accoridngly
+    
         sumProb = naive_bayes(wiki_words,logPrior,vocab,classDict,classWords)
+    
         if current_max.get_sumProb() == None or sumProb > current_max.get_sumProb():
             
             current_second_max = ResultInfo(current_max.get_tag_name(), current_max.get_sumProb())

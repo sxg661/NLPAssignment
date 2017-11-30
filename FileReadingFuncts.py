@@ -1,6 +1,7 @@
 
 from os                 import listdir
 from os.path            import isfile, join
+import TagExtractingFuncts
 
 def get_files(path):
     #gets the file paths to the training data
@@ -17,3 +18,14 @@ def read_file(path, file):
     data = file_handle.read()
     file_handle.close()
     return data
+
+
+def read_all_lines(file):
+    
+    file = open(file, "r")
+
+    lines = []
+    
+    for line in file:
+        lines.append(TagExtractingFuncts.lose_tags(line))
+    return lines

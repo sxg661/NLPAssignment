@@ -50,22 +50,33 @@ def join(word_list):
 
 
 def get_ne_broad_grammar(sent,tagger):
+    nouns = "(<OD>?<NNP|NN|NP|NN-TL|NP-TL>+<OD>?)"
+    
     grammar = """
                     
                     NE :
-                    {<AT|PP\$>?<NNP|NN|NP|NN-TL|NP-TL>+<IN|IN-TL><NNP|NN|NP|NN-TL|NP-TL>+}
-                    {<AT|PP\$>?<NNP|NN|NP|NN-T|NP-TL>+}
+                    {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
+                    {<AT|PP\$>?%+}
                     
-                         """
+                    
+                    
+                         """.replace("%",nouns)
+    
     return find_named_entities(sent, grammar, tagger)
 
+
 def get_ne_strict_grammar(sent,tagger):
+    nouns = "(<OD>?<NNP|NN|NP|NN-TL|NP-TL>*<NNP|NP|NP-TL><NNP|NN|NP|NN-TL|NP-TL>*<OD>?)"
+    
     grammar = """
                     NE :
-                    {<AT|PP\$>?<NNP|NP|NP-TL>+<IN|IN-TL><NNP|NP|NP-TL>+}
-                    {<AT|PP\$>?<NNP|NP|NP-TL>}
-                         """
+                    {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
+                    {<AT|PP\$>?%+}
+                    
+                         """.replace("%",nouns)
+    
     return find_named_entities(sent, grammar, tagger)
+
 
 def find_named_entities(sent, grammar, tagger):
     tknzr = TweetTokenizer()

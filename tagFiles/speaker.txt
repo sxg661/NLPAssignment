@@ -1,0 +1,300 @@
+<speaker>Mel Siegel</speaker>
+<speaker>Irfan Ali</speaker>
+<speaker>Dr.Jim Tomayko</speaker>
+<speaker>Mr. Shobatake</speaker>
+<speaker>Wojciech Maly</speaker>
+<speaker>Chris Bischof</speaker>
+<speaker>Joe Mertz</speaker>
+<speaker>Mary Jane Jacob</speaker>
+<speaker>John C. Akbari</speaker>
+<speaker>Teruko Mitamura</speaker>
+<speaker>Kelvin Ross</speaker>
+<speaker>Dr. David G. Goodenough</speaker>
+<speaker>Michael Gregory</speaker>
+<speaker>Eric H. Nyberg, 3rd</speaker>
+<speaker>Elinore Long</speaker>
+<speaker>Joy Mountford</speaker>
+<speaker>Steve Granick</speaker>
+<speaker>Dan Siewiorek</speaker>
+<speaker>Dr. Curlee</speaker>
+<speaker>Murray Spiegel</speaker>
+<speaker>Lester Lave</speaker>
+<speaker>Ross</speaker>
+<speaker>Pat Laughlin</speaker>
+<speaker>Professor Shaw</speaker>
+<speaker>Joyce Scott</speaker>
+<speaker>Max Henrion</speaker>
+<speaker>Tom Mitchell</speaker>
+<speaker>David Banks</speaker>
+<speaker>Lara Wolfson</speaker>
+<speaker>Chip Walter</speaker>
+<speaker>Joe Cascio</speaker>
+<speaker>Nobuhisa Yoda</speaker>
+<speaker>Mark Fox</speaker>
+<speaker>Mr. Takeshi Horie</speaker>
+<speaker>Kim Cannon</speaker>
+<speaker>Fukawa</speaker>
+<speaker>Iris Young</speaker>
+<speaker>Jessie Ramey</speaker>
+<speaker>DR. STEPHEN KENNEDY</speaker>
+<speaker>Stephanie Shaw</speaker>
+<speaker>MR. RONALD GDOVIC</speaker>
+<speaker>Alberto Elfes</speaker>
+<speaker>Julia Evens</speaker>
+<speaker>Alex Waibel</speaker>
+<speaker>Beverly Kedzierski</speaker>
+<speaker>Bob Carpenter</speaker>
+<speaker>Tom M. Mitchell</speaker>
+<speaker>Dr. David J. Fink</speaker>
+<speaker>Professor Sara Kiesler</speaker>
+<speaker>Norman Christ</speaker>
+<speaker>Dr. Thibadeau</speaker>
+<speaker>Bruce Sherwood</speaker>
+<speaker>Tom Morton</speaker>
+<speaker>Andrew C. Barrett</speaker>
+<speaker>Emilie Roth</speaker>
+<speaker>Teddy Seidenfeld</speaker>
+<speaker>Dr. Young</speaker>
+<speaker>Dr. Perlman</speaker>
+<speaker>Hirokazu Fukawa</speaker>
+<speaker>Nobutoshi Hanai</speaker>
+<speaker>Henrion</speaker>
+<speaker>Judi Mancuso</speaker>
+<speaker>Toni Gunzinger</speaker>
+<speaker>Pat Savage</speaker>
+<speaker>Clif McVay</speaker>
+<speaker>John Lloyd</speaker>
+<speaker>Julia Lawall</speaker>
+<speaker>Michael Lesk</speaker>
+<speaker>DR. SPYROS PANDIS</speaker>
+<speaker>Bennett Harrison</speaker>
+<speaker>Vasulka</speaker>
+<speaker>Dr. Cleve Moler</speaker>
+<speaker>Katarzyna Klich</speaker>
+<speaker>P. Bailey</speaker>
+<speaker>Sanjoy Mitter</speaker>
+<speaker>Brezany</speaker>
+<speaker>Dr. Irwin</speaker>
+<speaker>Steve Appold</speaker>
+<speaker>Richard M Young</speaker>
+<speaker>Thomas W. Malone</speaker>
+<speaker>Alex Rudnicky</speaker>
+<speaker>Dr. John Bares</speaker>
+<speaker>Patricia Brooks</speaker>
+<speaker>Randy Pausch</speaker>
+<speaker>Dr. Jack Adams</speaker>
+<speaker>Mr. Hancock</speaker>
+<speaker>Gene Rollins</speaker>
+<speaker>Professor James Morgan</speaker>
+<speaker>Robert Thibadeau</speaker>
+<speaker>Professor Steven Granick</speaker>
+<speaker>Ted Gibson</speaker>
+<speaker>Professor Manfred Paul</speaker>
+<speaker>Carla Gary</speaker>
+<speaker>Prof K.Gopinath</speaker>
+<speaker>Mr. Subhasis Ghoshal</speaker>
+<speaker>Patrick Stroh</speaker>
+<speaker>Steve Smith</speaker>
+<speaker>Chris Schmandt</speaker>
+<speaker>Maurice Cohen</speaker>
+<speaker>Ralph Hollis</speaker>
+<speaker>Woody Vasulka</speaker>
+<speaker>H. T. Kung</speaker>
+<speaker>Richard Smith</speaker>
+<speaker>Christian Bischof</speaker>
+<speaker>Richard M. Felder</speaker>
+<speaker>Dr. James C. Wetherbe</speaker>
+<speaker>URMILA M. DIWEKAR</speaker>
+<speaker>Fred Christianson</speaker>
+<speaker>Dr. Koji Ikuta</speaker>
+<speaker>Dr. Daniel Reed</speaker>
+<speaker>William M. Welty</speaker>
+<speaker>David Fleming</speaker>
+<speaker>Alexander I. Rudnicky</speaker>
+<speaker>Professor Warren Baker</speaker>
+<speaker>Toshinari Takahashi</speaker>
+<speaker>MR. MICHAEL LUTZ</speaker>
+<speaker>Katia Sycara</speaker>
+<speaker>Mary Francis McLaughlin </speaker>
+<speaker>Andrei Voronkov</speaker>
+<speaker>George Tita</speaker>
+<speaker>Mr. Kurtz</speaker>
+<speaker>Jeannine Amber</speaker>
+<speaker>Richard Szeliski</speaker>
+<speaker>Victor Milenkovic</speaker>
+<speaker>Marc Irwin, Ph.D.</speaker>
+<speaker>Philip Smith</speaker>
+<speaker>Uwe Meier</speaker>
+<speaker>Peter Brezany</speaker>
+<speaker>Professor Teddy Seidenfeld</speaker>
+<speaker>Karen Schriver</speaker>
+<speaker>Maria Klawe</speaker>
+<speaker>Olivier Danvy</speaker>
+<speaker>Jonathan Caulkins</speaker>
+<speaker>MERCE CUNNINGHAM</speaker>
+<speaker>Paul Chou</speaker>
+<speaker>Steve Roehrig</speaker>
+<speaker>Lawrence C. Stewart</speaker>
+<speaker>Stuart Friedberg</speaker>
+<speaker>Steve Cochran</speaker>
+<speaker>Andrew Gault</speaker>
+<speaker>Hans-Werner Hein</speaker>
+<speaker>John Graham</speaker>
+<speaker>Ben Wise</speaker>
+<speaker>Holliman</speaker>
+<speaker>Rita Silverman</speaker>
+<speaker>Dr. Donald Kosy</speaker>
+<speaker>Professor Ann Orloff</speaker>
+<speaker>Barry Arons</speaker>
+<speaker>JULIA HIRSCHBERG</speaker>
+<speaker>DR. EDWARD A. SUDICKY</speaker>
+<speaker>Mr. Lennert</speaker>
+<speaker>Ralph Hill</speaker>
+<speaker>DR. PAUL FISCHBECK</speaker>
+<speaker>Larry Stewart</speaker>
+<speaker>Michael Erdmann</speaker>
+<speaker>Erik Devereux</speaker>
+<speaker>MR. DAVID A. LENNERT</speaker>
+<speaker>Karen Litzinger</speaker>
+<speaker>Dr. Randall Curlee</speaker>
+<speaker>Jim Boshears</speaker>
+<speaker>Dr. Werner Koepf</speaker>
+<speaker>Sarvajit S. Sinha</speaker>
+<speaker>Dan Suthers</speaker>
+<speaker>Dr. Franklyn G. Prendergast</speaker>
+<speaker>Gary K. Fedder</speaker>
+<speaker>Cam Searle</speaker>
+<speaker>Al Roth</speaker>
+<speaker>George W. Cobb</speaker>
+<speaker>FARRO F. RADJY, PH.D.</speaker>
+<speaker>Keith Florig</speaker>
+<speaker>Toshiaki Tsuboi</speaker>
+<speaker>Dr. R. J. (Bob) Pangborn</speaker>
+<speaker>Dr. Clifford J. Tabin</speaker>
+<speaker>Arvind Sathi</speaker>
+<speaker>Charles Paine</speaker>
+<speaker>Julia Hirschberg</speaker>
+<speaker>Alonzo Kelly</speaker>
+<speaker>Bill Wescott</speaker>
+<speaker>James Demmel</speaker>
+<speaker>Larry O'Gorman</speaker>
+<speaker>Arjun Makhijani, PhD</speaker>
+<speaker>Dan Martin</speaker>
+<speaker>Molly Johnson</speaker>
+<speaker>Neil Jones</speaker>
+<speaker>Ernst Munter</speaker>
+<speaker>Mike Greenberg</speaker>
+<speaker>Mr. Walker</speaker>
+<speaker>R A V I   K I R A N</speaker>
+<speaker>Neil D. Jones</speaker>
+<speaker>Robert E. Kraut</speaker>
+<speaker>Jakob Nielsen</speaker>
+<speaker>Campbell Searle</speaker>
+<speaker>Brian McCall</speaker>
+<speaker>Ricardo Mesa-Tejada, MD</speaker>
+<speaker>Alan Huang</speaker>
+<speaker>Avi Seidmann</speaker>
+<speaker>Mr. M. Irfan Ali</speaker>
+<speaker>Prof. Richard Day</speaker>
+<speaker>Maxion</speaker>
+<speaker>Peter BREZANY</speaker>
+<speaker>Michael Christel</speaker>
+<speaker>Tom Neuendorffer</speaker>
+<speaker>Dr. Jeffrey D. Hermes</speaker>
+<speaker>Louise Fitzgerald</speaker>
+<speaker>Michael Kohlhase</speaker>
+<speaker>Robert Stevens</speaker>
+<speaker>Mr. Okada</speaker>
+<speaker>Dr. Walter Kropatsch</speaker>
+<speaker>Mr. Rajat Ghosh</speaker>
+<speaker>Tony DeRose</speaker>
+<speaker>Professor Morgan</speaker>
+<speaker>Ido Erev</speaker>
+<speaker>Barrett</speaker>
+<speaker>Jim Peters</speaker>
+<speaker>Professors Rob A. Rutenbar</speaker>
+<speaker>Ed Barron</speaker>
+<speaker>Prof Tom Morton</speaker>
+<speaker>Nick Holliman</speaker>
+<speaker>STEPHEN PINK</speaker>
+<speaker>DR. PAUL PORTNEY</speaker>
+<speaker>Dave Kaufer</speaker>
+<speaker>Rayman</speaker>
+<speaker>Dan R. Olsen Jr.</speaker>
+<speaker>Mr. Dan Walker</speaker>
+<speaker>Abraham Seidmann</speaker>
+<speaker>Professor Iris Young</speaker>
+<speaker>Gordon Lewis</speaker>
+<speaker>MIKE DAVIS</speaker>
+<speaker>Paul Slovic</speaker>
+<speaker>Gerald Penn</speaker>
+<speaker>Fil Alleva</speaker>
+<speaker>Mel Siege</speaker>
+<speaker>Dr. Aviad Zlotnick</speaker>
+<speaker>Conrad Poelman</speaker>
+<speaker>Hugh Durrant-Whyte</speaker>
+<speaker>David Smith</speaker>
+<speaker>Karen Levine</speaker>
+<speaker>Ramana Reddy</speaker>
+<speaker>Emily Roth</speaker>
+<speaker>E. Sudicky Darcy</speaker>
+<speaker>Dr. Fred Jelinek</speaker>
+<speaker>M. Irfan Ali</speaker>
+<speaker>Mike Davis</speaker>
+<speaker>Cindy Bryce</speaker>
+<speaker>Laura Petitto</speaker>
+<speaker>Eric Svaan</speaker>
+<speaker>Kathy Bernard</speaker>
+<speaker>Dr. Fox</speaker>
+<speaker>Robert DeKeyser</speaker>
+<speaker>Prof. Makoto Nagao</speaker>
+<speaker>Dr. Davis L. Ford</speaker>
+<speaker>Fred Jelinek</speaker>
+<speaker>Dr. Sorin Cohn</speaker>
+<speaker>Mr. Arpad Horvath</speaker>
+<speaker>Ralph D. Hill</speaker>
+<speaker>Bill Hancock</speaker>
+<speaker>Jef Raskin</speaker>
+<speaker>Christel</speaker>
+<speaker>Professor Orloff</speaker>
+<speaker>JOHN GOULD</speaker>
+<speaker>Robert Booth</speaker>
+<speaker>Yasuro Shobatake</speaker>
+<speaker>JOHN D. GOULD</speaker>
+<speaker>Barry R. Fox</speaker>
+<speaker>John Gould</speaker>
+<speaker>Richard Maddox</speaker>
+<speaker>Rob Rutenbar</speaker>
+<speaker>Stefani Ledewitz</speaker>
+<speaker>Steve Blusk</speaker>
+<speaker>Jolene Galegher</speaker>
+<speaker>Paula Rayman</speaker>
+<speaker>John Greiner</speaker>
+<speaker>Dr. Alexander Zehnder</speaker>
+<speaker>Ms. Scott</speaker>
+<speaker>Rosemary Chalk</speaker>
+<speaker>J. Morgan</speaker>
+<speaker>Professor Cusumano</speaker>
+<speaker>Michael A. Cusumano</speaker>
+<speaker>DAVID DZOMBAK</speaker>
+<speaker>Roger Dannenberg</speaker>
+<speaker>DR. WILLIAM FISH</speaker>
+<speaker>Kohlhase</speaker>
+<speaker>Peter Bailey</speaker>
+<speaker>Dr. Janice Perlman</speaker>
+<speaker>Nagao</speaker>
+<speaker>Noelle C. Conover</speaker>
+<speaker>Susanne Carroll</speaker>
+<speaker>Steve Shafer</speaker>
+<speaker>Dean Kaplan</speaker>
+<speaker>Alex Aiken</speaker>
+<speaker>Steven Kurtz</speaker>
+<speaker>Grady Booch</speaker>
+<speaker>Terra McKinnish</speaker>
+<speaker>ANDREW C. BARRETT</speaker>
+<speaker>Dr. Noellette Conway-Schempf</speaker>
+<speaker>Professor John Skvoretz</speaker>
+<speaker>Larisa Naples</speaker>
+<speaker>Sumit Dutta Chowdhury</speaker>
+<speaker>Dr. Kennedy</speaker>
+<speaker>Shyam Sunder</speaker>

@@ -1,0 +1,191 @@
+<location>Engineer's Club, 337 4th Avenue</location>
+<location>WeH 4601</location>
+<location>Porter Hall 125C</location>
+<location>Engineering and Public Policy conference room (Baker Hall 129</location>
+<location>PH B34</location>
+<location>ADAMSON WING AUDITORIUM, BAKER HALL</location>
+<location>WEH 5409</location>
+<location>WH7220</location>
+<location>Hamburg 1001</location>
+<location>the auditorium</location>
+<location>Breed Hall, Margaret Morrison Room 103</location>
+<location>Wean Hall 8220</location>
+<location>CMT conference room (BoM 109</location>
+<location>Mellon Institute Auditorium</location>
+<location>HH B131</location>
+<location>Dean's Conference Room, Baker Hall 246A</location>
+<location>Wean 5409</location>
+<location>GSIA Rm 318</location>
+<location>Seminar Room 254A</location>
+<location>WEAN HALL 7220</location>
+<location>Room 2315 Doherty Hall</location>
+<location>1295 Biomedical Science Tower, Pitt</location>
+<location>3005 Hamburg Hall</location>
+<location>Benedum 1175</location>
+<location>Fil's office</location>
+<location>WeH8220</location>
+<location>Warner Hall 419</location>
+<location>WeH 7211</location>
+<location>Hamburg Hall 1001</location>
+<location>room 207 of the interim student center</location>
+<location>1004HBH</location>
+<location>Breed Hall, Margaret Morrison Building</location>
+<location>129 Baker hall EPP Conference Room</location>
+<location>University of Pittsburgh           Department of Economics           4P56 Forbes Quadrangle</location>
+<location>ISL Lab</location>
+<location>Benedum Hall</location>
+<location>Room 1001, Hamburg Hall</location>
+<location>Doherty Hall, Room 2315</location>
+<location>4623 (?), the fleecing room</location>
+<location>1003</location>
+<location>Scaife Hall auditorium</location>
+<location>room 1001</location>
+<location>Mellon Institute Conference Room</location>
+<location>La Roche College, 9000 Babcock Blvd.</location>
+<location>Hamburg Hall, H. John Heinz III School of Public Policy and Management</location>
+<location>Baker Hall 235A</location>
+<location>Student Center, Room 207</location>
+<location>7220 Wean Hall</location>
+<location>Babcock Room, 40th floor, Cathedral of Learning</location>
+<location>3313 DH</location>
+<location>PH 223D</location>
+<location>3rd Floor Conference room Mellon Institute Building</location>
+<location>Swank Room, Baker Hall 255B</location>
+<location>HbH 2222</location>
+<location>EPP conference room, located in BH 129</location>
+<location>PH A18C</location>
+<location>Doherty 3313</location>
+<location>M.I. 448</location>
+<location>316 Allen Hall, Pitt</location>
+<location>Hamburg Hall 1000</location>
+<location>Porter Hall 07-A</location>
+<location>Faculty Dining Room in Skibo</location>
+<location>Adamson Wing</location>
+<location>UCC 279</location>
+<location>Wean Hall 4601</location>
+<location>Carnegie Conference Room, Warner Hall</location>
+<location>Hamburg Hall Auditorium</location>
+<location>EDRC Conference Room</location>
+<location>basement of Hunt Library</location>
+<location>WeH 4623</location>
+<location>The Babcock Room, 40th floor, of  		the Cathedral of Learning</location>
+<location>Forbes Quad, 2M56 on the University of Pittsburgh campus</location>
+<location>Student Center Room 207</location>
+<location>WeH 6121</location>
+<location>GSIA main auditorium</location>
+<location>Carnegie Conference Room, Warner Hall 1st floor</location>
+<location>8.220</location>
+<location>4605 Wean</location>
+<location>6327 Wean Hall, 6th Floor Lounge</location>
+<location>University of Pittsburgh                  Department of Economics                  4P56 Forbes Quadrangle</location>
+<location>WEH 7500</location>
+<location>8220 Wean</location>
+<location>Doherty Hall 1112</location>
+<location>room 152</location>
+<location>ISL conference room</location>
+<location>5409 Wean Hall</location>
+<location>HBH 1202</location>
+<location>7500 Wean Hall</location>
+<location>106 Allen Hall, Pitt</location>
+<location>Porter Hall 126C</location>
+<location>room 318 (GSIA</location>
+<location>Wean 4623</location>
+<location>DH 2315</location>
+<location>CMT conference room (BoM 109)</location>
+<location>Warner Hall 415</location>
+<location>Porter Hall A18C</location>
+<location>CMT conference room (Bdlg B 109</location>
+<location>ITC Lecture Room (Rm 279), UCC</location>
+<location>Wherrett Room, Skibo</location>
+<location>422 Scaife</location>
+<location>ADAMSON WING, BAKER HALL 136</location>
+<location>Scaife Hall Room 618</location>
+<location>Pitt in the Babcock Room, 40th floor, Cathedral of Learning</location>
+<location>Scaife Hall auditorium</location>
+<location>HbH 1004</location>
+<location>Room 2110 HbH</location>
+<location>Scaife Hall Auditorium</location>
+<location>1175 Benedum Hall, University of Pittsburgh</location>
+<location>WeH 5409</location>
+<location>1001 Hamburg</location>
+<location>EPP Conference Room Baker Hall 129</location>
+<location>Doherty Hall, Room 2315</location>
+<location>HBH 1004</location>
+<location>1001HBH</location>
+<location>@ISL</location>
+<location>GSIA 259</location>
+<location>Wean 7500</location>
+<location>DOHERTY HALL 1212</location>
+<location>Skibo Ballroom</location>
+<location>ADAMSON WING Auditorium in Baker Hall</location>
+<location>Student Center, Room 210</location>
+<location>Hamerschlag  Hall, Room 1112</location>
+<location>Room 1004 HbH</location>
+<location>Wean Hall 5409</location>
+<location>ROOM 1004 Hamburg Hall</location>
+<location>Baker Hall - 355</location>
+<location>Carnegie Conference Room, 1st Floor Warner Hall</location>
+<location>HbH 1003</location>
+<location>room 2110</location>
+<location>Wean Hall 4616</location>
+<location>MS auditorium in GSIA</location>
+<location>Adamson Wing, Baker Hall</location>
+<location>romm 207, Student Activities Center</location>
+<location>Faculty Dining Room in Skibo</location>
+<location>DH3313</location>
+<location>Faculty/Ph.D. lounge</location>
+<location>Wean Hall 8110</location>
+<location>Hamburg Hall 1002</location>
+<location>SEI 3505</location>
+<location>Carnegie Conference Room (1st Floor Warner Hall</location>
+<location>EPP conference room, located in BH-129</location>
+<location>Women's Center</location>
+<location>WeH 7220</location>
+<location>Wean Hall 7220</location>
+<location>EDRC Conference Hall - 1202 Hamburg Hall</location>
+<location>Doherty Hall 1112</location>
+<location>116 Old Chem</location>
+<location>room 2110 in Hamburg Hall</location>
+<location>Wean Hall 7500</location>
+<location>Hamburg Hall room 2224</location>
+<location>Main Auditorium (1st Floor) GSIA</location>
+<location>4623 Wean Hall</location>
+<location>CMU, Adamson Wing (Baker Hall</location>
+<location>4605 Wean Hall</location>
+<location>Hamburg Hall, Room 1004</location>
+<location>Scaife Auditorium (Room 125</location>
+<location>Porter Hall 7A</location>
+<location>CMT red conference room</location>
+<location>Room 2224 of EDRC</location>
+<location>College of Fine Arts in Room 314C</location>
+<location>Doherty Hall Room 1112</location>
+<location>Skibo 105-106</location>
+<location>Hamburg Hall Room 1004</location>
+<location>second floor of teh College of Fine Arts</location>
+<location>Baker Hall 237B</location>
+<location>WeH 5403</location>
+<location>Wean Hall 4623</location>
+<location>2110</location>
+<location>Hamburg Hall 1000                                     (Auditorium</location>
+<location>Adamson Wing Auditorium, Baker Hall</location>
+<location>CMT Conference Room, 109 Smith Hall</location>
+<location>DH 3313 (large conference room</location>
+<location>William Pitt Union in The Ballroom</location>
+<location>Baker Hall 355</location>
+<location>6423 Wean Hall</location>
+<location>8220</location>
+<location>2315 Doherty Hall</location>
+<location>7220 Wean</location>
+<location>room 261 of GSIA in the new building</location>
+<location>Robolounge (314 BoM D)</location>
+<location>1295 Biomedical Science Tower</location>
+<location>422 SCAIFE</location>
+<location>PH 100</location>
+<location>ROBERT MORRIS--MOON CAMPUS</location>
+<location>Doherty Hall, Rm DH2315</location>
+<location>WeH 8220</location>
+<location>Museum of Art Theater, Carnegie</location>
+<location>Hamerschlag Hall 1112</location>
+<location>UCC 283</location>
+<location>1175 Benedum Hall</location>
+<location>Doherty Hall 2210</location>
