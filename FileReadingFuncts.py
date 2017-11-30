@@ -19,6 +19,15 @@ def read_file(path, file):
     file_handle.close()
     return data
 
+def read_wiki(file):
+    file = open(file, "r")
+
+    lines = []
+
+    for line in file:
+        lines.append(line.replace("\n",""))
+
+    return lines
 
 def read_all_lines(file):
     

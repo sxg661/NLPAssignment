@@ -47,12 +47,10 @@ def get_tag_examples(tag_name, data, tag_dict):
     matches = find_tag_matches(tag_name,data)
 
     #removes the tags from every single match
-    matches_notags = []
     for match in matches:
         #we'll just get rid of newlines now to make everything easier
         match = match.replace("\n"," ")
         match_nt = lose_tags(match)
-        matches_notags.append(match_nt)
 
         #adds this tag to the dictionary
         #(as a unique key, it honestly doesn't matter what the key is
@@ -61,7 +59,7 @@ def get_tag_examples(tag_name, data, tag_dict):
             match_nt = match_nt + "z"
         tag_dict[match_nt] = tag_name
     
-    return matches_notags, tag_dict
+    return tag_dict
 
 
 

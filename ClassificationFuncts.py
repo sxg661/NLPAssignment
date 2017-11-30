@@ -7,11 +7,10 @@ import re
 
 
 
-def get_examples(tag_name, tag_dict):
-    inputFile = tag_name + ".txt"
-    data = FileReadingFuncts.read_file("tagFiles/",inputFile)
-    examples, tag_dict = TagExtractingFuncts.get_tag_examples(tag_name, data, tag_dict)
-    return examples[:20], tag_dict
+def get_examples(tag_name):
+    inputFile = "tagFiles/" + tag_name + ".txt"
+    examples = FileReadingFuncts.read_all_lines(inputFile)
+    return examples
 
 
 
@@ -20,15 +19,17 @@ def build_vocab(tag_name, tag_dict):
     #takes all the entities with a certain tag name from one string of data from a single file
     #then it goes on wikipedia and gets all the words that come up when you search that string
 
-    tag_examples, tag_dict = get_examples(tag_name, tag_dict)
+    examples = get_examples(tag_name)
 
-    words = []
+    word_file = "wiki/{}.txt".format(tag_name)
+    words = FileReadingFuncts.read_wiki(word_file)
 
-
-    for entity in tag_examples:
-        
-        words = words + WikipediaFuncts.get_words(entity)
-
+    for example in examples:
+        key = example
+        if key in tag_dict:
+            key = key + "z"
+        tag_dict[key] = tag_name
+    
     return words, tag_dict
 
 
@@ -135,5 +136,25 @@ def classify(entity, vocabs, tag_occurances, tag_names):
     return current_max, current_second_max
 
 
+
+def classify__bayes(entity, strict, tag_names, vocabs, tag_occurances):
+
+    best_match, second_match = classify(entity, vocabs, tag_occurances, tag_names)
+   
+    if strict:
+        return best_match.get_tag_name()
+    else:
+        if abs(best_match.get_sumProb() - second_match.get_sumProb()) > 50:
+            return best_match.get_tag_name()
+        else: return None
+        
+    return "name"
+
+
+def classify__files(entity, tag_names, examples):
+    for tag_name in tag_names:
+        if entity in examples[tag_name]:
+            return tag_name
+    return None
 
 

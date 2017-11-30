@@ -65,26 +65,6 @@ def remove_sub_strings(entity_dict):
 
 
 
-#MOVE TO CLASSIFY MODULE
-def classify__bayes(entity, strict, tag_names, vocabs, tag_occurances):
-
-    best_match, second_match = ClassificationFuncts.classify(entity, vocabs, tag_occurances, tag_names)
-   
-    if strict:
-        return best_match.get_tag_name()
-    else:
-        if abs(best_match.get_sumProb() - second_match.get_sumProb()) > 20:
-            return best_match.get_tag_name()
-        else: return None
-        
-    return "name"
-
-#MOVE TO CLASSIFY MODULE
-def classify__files(entity, tag_names, examples):
-    for tag_name in tag_names:
-        if entity in examples[tag_name]:
-            return tag_name
-    return None
 
 def get_examples(tag_name):
     file = "tagFiles/{}.txt".format(tag_name)
@@ -99,9 +79,11 @@ def tag_entities(sent, entities):
         sent= sent.replace(entity, "{}{}{}".format(open_tag,entity,close_tag))
     return sent
 
-
+#tag_named_entities("Hi there I am Dr. Mark Lee, I am going down to Hamburg Hall 909A now for a lecture")
            
 def tag_named_entities(sent):
+    #goes through the sentence and finds everything that definitely is a named entitiy (strict)
+    #and stuff that is less likely to be, but could be (broad)
     strict_entities,broad_entities = get_named_entities(sent)
 
     print(strict_entities)
@@ -111,32 +93,45 @@ def tag_named_entities(sent):
     tag_names = ["speaker","location"]
     vocabs, tag_occurances = ClassificationFuncts.build_training_vocabs(tag_names)
 
+
+    #reads in the example files created from the training data for the locations and the speakers
     examples = {}
     for tag_name in tag_names:
         examples[tag_name] = get_examples(tag_name)
     
     classified_entities = {}
-    
-    for entity in strict_entities:
-        ent_type = classify__files(entity, tag_names, examples)
 
-        if ent_type != None:
-            classified_entities[entity] = ent_type
-        else:
-            ent_type = classify__bayes(entity, True, tag_names, vocabs, tag_occurances)
-            classified_entities[entity] = ent_type
+    entities = [strict_entities, broad_entities]
 
-    for entity in broad_entities:
-        ent_type = classify__files(entity, tag_names, examples)
+    #classifies and tags each entitiy
+    for i in range(0,len(entities)):
 
-        if ent_type != None:
-            classified_entities[entity] = ent_type
-        else:
-            ent_type = classify__bayes(entity, False, tag_names, vocabs, tag_occurances)
+        for entity in entities[i]:
+
+            #before doing bayes we can check if this is an entitiy that came up in the training data
+            #by looking at the examples we rede in a little bit
+            ent_type = ClassificationFuncts.classify__files(entity, tag_names, examples)
+
+            # if we get a match from this we can automatically classify the entity
             if ent_type != None:
                 classified_entities[entity] = ent_type
+            # if not we can use our bayes classifier
+            else:
+                
+                #(the bayes classifier will have a cutoff if the entitiy was not found using the strict grammar)
+                strict = True;
+                if i == 1:
+                    strict = False
 
-    classifed_entities = remove_sub_strings(classified_entities)
+                
+                ent_type = ClassificationFuncts.classify__bayes(entity, strict, tag_names, vocabs, tag_occurances)
+
+                #if the entity is classified we give it this tag, overwise at this point we just throw it in the trash
+                if ent_type != None:
+                    classified_entities[entity] = ent_type
+
+    classified_entities = remove_sub_strings(classified_entities)
+
 
     sent = tag_entities(sent, classified_entities)
 

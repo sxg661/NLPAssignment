@@ -45,7 +45,11 @@ def backoff_tagger(train_sents, tagger_classes):
 def join(word_list):
     stringy = ""
     for word in word_list:
-        stringy = stringy + " " + word[0]
+        word_to_add = word[0]
+        #I don't want a space if the word is a dot, because of Dr. and Mrs. etc
+        if word_to_add != ".":
+            word_to_add = " " + word_to_add 
+        stringy = stringy + word_to_add
     return stringy[1:]
 
 
@@ -56,7 +60,9 @@ def get_ne_broad_grammar(sent,tagger):
                     
                     NE :
                     {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
+                    {(<NN><.>)?(%+<IN|IN-TL|,>%+)+}
                     {<AT|PP\$>?%+}
+                    {(<NN><.>)?%+}
                     
                     
                     
@@ -70,7 +76,9 @@ def get_ne_strict_grammar(sent,tagger):
     
     grammar = """
                     NE :
+                    {<NN.>(%+<IN|IN-TL|,>%+)+}
                     {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
+                    {(<NN><.>)?%+}
                     {<AT|PP\$>?%+}
                     
                          """.replace("%",nouns)
