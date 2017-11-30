@@ -59,10 +59,10 @@ def get_ne_broad_grammar(sent,tagger):
     grammar = """
                     
                     NE :
-                    {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
-                    {(<NN><.>)?(%+<IN|IN-TL|,>%+)+}
                     {<AT|PP\$>?%+}
                     {(<NN><.>)?%+}
+                    {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
+                    {(<NN><.>)?(%+<IN|IN-TL|,>%+)+}
                     
                     
                     
@@ -71,16 +71,17 @@ def get_ne_broad_grammar(sent,tagger):
     return find_named_entities(sent, grammar, tagger)
 
 
+#{<NN.>(%+<IN|IN-TL|,>%+)+}
+#{<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
+# {<AT|PP\$>?%+}
+
 def get_ne_strict_grammar(sent,tagger):
     nouns = "(<OD>?<NNP|NN|NP|NN-TL|NP-TL>*<NNP|NP|NP-TL><NNP|NN|NP|NN-TL|NP-TL>*<OD>?)"
     
+    
     grammar = """
                     NE :
-                    {<NN.>(%+<IN|IN-TL|,>%+)+}
-                    {<AT|PP\$>?(%+<IN|IN-TL|,>%+)+}
                     {(<NN><.>)?%+}
-                    {<AT|PP\$>?%+}
-                    
                          """.replace("%",nouns)
     
     return find_named_entities(sent, grammar, tagger)

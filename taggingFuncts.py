@@ -137,14 +137,46 @@ def tag_named_entities(sent):
 
     return sent
             
-        
+
+def get_sentences(data):
+    #one thing i've noticed is that sentences seem to almost never have certain substrings e.g. two spaces in a row
+    #whereas things which are not sentences almost always have atleast one, so I am going to find the setences that way :)
+
+    #this tokenizer splits the data rougly into sentences
+    tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
+    tokens = tokenizer.tokenize(data)
+
+    #now we can check for spaces:
+    
+    illegalSentenceStrings = ["--","  ","**","=="]
+
+    #anything in the format <Word>:<something else> is also not going to be a sentence
+    illegalRegEx = re.compile("[a-zA-Z]+:.*")
+
+    sentences = []
+
+    for token in tokens:
+        if not illegalRegEx.match(token):
+            illegal = False
+
+            for string in illegalSentenceStrings:
+                if string in token:
+                    illegal = True
+
+            if not illegal:
+                sentences.append(token)
+
+    return sentences
+    
+    
 def main():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
-    for file in get_files(path):
-        data = read_file(path,file)
-        dataTokens= tokenizer.tokenize(data)
-        print(dataTokens)
+    for file in [FileReadingFuncts.get_files(path)[30]]:
+        data = FileReadingFuncts.read_file(path,file)
+        sentences = get_sentences(data)
+        for sentence in sentences:
+            print(sentence + "\n\n")
 
     
     

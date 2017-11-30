@@ -140,6 +140,8 @@ def classify(entity, vocabs, tag_occurances, tag_names):
 def classify__bayes(entity, strict, tag_names, vocabs, tag_occurances):
 
     best_match, second_match = classify(entity, vocabs, tag_occurances, tag_names)
+    print("{}: {}".format(entity,abs(best_match.get_sumProb() - second_match.get_sumProb())))
+
    
     if strict:
         return best_match.get_tag_name()
