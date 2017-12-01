@@ -22,6 +22,7 @@ from os.path            import isfile, join
 import NamedEntityFindingFuncts
 import ClassificationFuncts
 import FileReadingFuncts
+import SentenceTaggingFuncts
 
 
 
@@ -138,45 +139,33 @@ def tag_named_entities(sent):
     return sent
             
 
-def get_sentences(data):
-    #one thing i've noticed is that sentences seem to almost never have certain substrings e.g. two spaces in a row
-    #whereas things which are not sentences almost always have atleast one, so I am going to find the setences that way :)
-
-    #this tokenizer splits the data rougly into sentences
-    tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
-    tokens = tokenizer.tokenize(data)
-
-    #now we can check for spaces:
-    
-    illegalSentenceStrings = ["--","  ","**","=="]
-
-    #anything in the format <Word>:<something else> is also not going to be a sentence
-    illegalRegEx = re.compile("[a-zA-Z]+:.*")
-
-    sentences = []
-
-    for token in tokens:
-        if not illegalRegEx.match(token):
-            illegal = False
-
-            for string in illegalSentenceStrings:
-                if string in token:
-                    illegal = True
-
-            if not illegal:
-                sentences.append(token)
-
-    return sentences
-    
+def get_in_dict(entities, tag_name):
+    entities_dict = {}
+    for entity in entities:
+        entities_dict[entity] = tag_name
+    return entities_dict
     
 def main():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
-    for file in [FileReadingFuncts.get_files(path)[30]]:
+    FileReadingFuncts.get_files(path)
+    for file in ["350.txt"]:
         data = FileReadingFuncts.read_file(path,file)
-        sentences = get_sentences(data)
-        for sentence in sentences:
-            print(sentence + "\n\n")
+        #print(data)
+        sentences = SentenceTaggingFuncts.get_sentences(data)
+
+        #tags the sentences
+        entities_to_tag = get_in_dict(sentences,"sentence")
+        data = tag_entities(data, entities_to_tag)
+        
+        paragraphs = SentenceTaggingFuncts.get_paragraphs(data)
+
+        #tags the paragraphs
+        entities_to_tag = get_in_dict(paragraphs,"paragraph")
+        data = tag_entities(data, entities_to_tag)
+
+        
+        print(data)
 
     
     
