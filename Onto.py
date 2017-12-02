@@ -1,25 +1,33 @@
 # IMPLEMENT MULTIWORD TOPICS
-# GET THE LEMMA SO THAT I CAN CHECK WHETHER THIS IS THE DESIRED ONTOLOGY
-# TRY TO GET THE HYPER_LOOP TO BE AN ACTUAL LOOP[
+# - seperated multi-word topics into seperate words
 
-from nltk.corpus.reader.wordnet import Synset
 from nltk.corpus import wordnet
+from nltk.tokenize import word_tokenize
 import re
 
-ontologies = [Synset('discipline.n.01')]
+ontologies = ['discipline.n.01']
 
 def collect_topics(data):
     topic = re.compile('Topic:    ' + '[^/n]*')
     topics = topic.findall(data)
     for topic in topics:
-        return trim_header(topic)
+        topics_trim = trim_header(topic)
+        topics_split = word_split(topics_trim)
+    return topics_split
+        
+def word_split(string):
+    words = word_tokenize(string)
+    return words
 
 def trim_header(topic):    
     return topic[10:len(topic)]
 
-def get_synsets(topic):
-    topic_syns = wordnet.synsets(topic)
-    return topic_syns
+
+## FIX!!!!
+def get_synsets(topics_split):
+    for topic in topics_split:
+        topic_syns = wordnet.synsets(topic)
+        return topic_syn
 
 def assign_synset(topic_syns):
     syn_pick = topic_syns[0]
@@ -33,26 +41,22 @@ def assign_hypernym(t_hyper):
     hyper_pick = t_hyper[0]
     return hyper_pick
 
-def hyper_loop(data):
-    topic = collect_topics(data)
+def make_syn_pick(data):
+    topic = collect_topic(data)    # find the topic of email
     print(topic)
-    topic_syns = get_synsets(topic)
+    topic_syns = get_synsets(topic) # find corresponding synsets
     print(topic_syns)
-    syn_pick = assign_synset(topic_syns)
-    print(syn_pick)
-    f_hyper = find_hypernym(syn_pick)
-    print(f_hyper)
-    hyper_pick = assign_hypernym(f_hyper)
-    print(hyper_pick)
-    if (hyper_pick in ontologies):
-        print(hyper_pick + "is our ontology!")
-    else:
-        print(hyper_pick + "is not out ontology! Carrying on...")
-        h_hyper = find_hypernym(hyper_pick)
-        print(h_hyper)
-        hp_hyper = assign_hypernym(h_hyper)
-        print(hp_hyper)
-        h_h_hyper = find_hypernym(hp_hyper)
-        print(h_h_hyper)
-        hpp_hyper = assign_hypernym(h_h_hyper)
-        print(hpp_hyper)
+    syn_pick = assign_synset(topic_syns) # assign the first of those synsets to the topic
+    return syn_pick
+    
+def hyper_loop_rec(data):
+    hyper_pick = wordnet.synset('dog.n.01')
+    syn_pick = make_syn_pick(data)    
+    while (hyper_pick.name() not in ontologies):
+        f_hyper = find_hypernym(syn_pick)
+        hyper_pick = assign_hypernym(f_hyper)
+        syn_pick = hyper_pick
+        if (hyper_pick.name() in ontologies):
+            print("Ontology found! Our ontology is: " + hyper_pick.name())
+        else:
+            print("We have not reached the desired ontology. Carrying on the search...")
