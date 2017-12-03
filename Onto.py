@@ -1,78 +1,99 @@
-# IMPLEMENT MULTIWORD TOPICS
-# - seperated multi-word topics into seperate words
-# - getting synsets for every word in the topic
+### WHAT'S GOING ON HERE:
+# We are going to use WordNet in order to find the ontology of the emails.
+# Each word has a number of 'senses'. For example, the word 'chemistry' can mean
+# the science, or the 'chemistry' between two people. Each word sense is known as
+# a 'synset' in WordNet. What we are aiming to do is extract what is in the Topic
+# header in each emails. This can either be one word (for example, Topic: Chemistry)
+# or multiple words (such as Topic: Catalytic reactors). We are using regular expressions
+# in order to make a successful extraction of the topic. If the topic is one word,
+# we look for the synsets corresponding to this one word. If the topic consists of many
+# words, we look for the synsets corresponding to the last word of the topic string.
+# We proceed to find the synsets connected to the first or last word of the topic, depending
+# on the one-word or multiword case. We go by this convention: out of all the synsets
+# found for the topic, we shall assign it the very first one. Beyond that, we will proceed
+# to find all hypernyms related to this synset we picked. We shall once again assign the first
+# one to the synset by convention. We shall keep doing this until we reach a hypernym
+# which is in our list 'ontologies'. When this happens, we shall terminate the execution
+# and declare that hypernym as being our ontology under which our email is classified.
 
 from nltk.corpus import wordnet
 from nltk.tokenize import word_tokenize
 import re
 
+# our list of things we will consider our ontology once reached
 ontologies = ['discipline.n.01']
 
+# gathering what the topic is from the "Topic:    " part of the emial
 def collect_topics(data):
-    topic = re.compile('Topic:    ' + '[^/n]*')
-    topics = topic.findall(data)
-    for topic in topics:
-        topics_trim = trim_header(topic)
-        topics_split = word_split(topics_trim)
+    topic = re.compile('Topic:    ' + '[^/n]*') # the regex
+    topics = topic.findall(data)                # find and list the words of the topic
+    for topic in topics:                        
+        topics_trim = trim_header(topic)        # removing the "Topic:    " from the topic words
+        topics_split = word_split(topics_trim)  # splitting the words of a possibly multiword topic (doesn't do anything if the topic is one word, eg. Chemistry)
     return topics_split
-        
+
+# the word splitting function       
 def word_split(string):
     words = word_tokenize(string)
     return words
 
+# the trim header
 def trim_header(topic):    
     return topic[10:len(topic)]
 
+# if we only have a one-word topic, use this
+def get_synsets_first(topics_split):
+    for topic in topics_split:
+        topic_syns = wordnet.synsets(topic) # get the synsets connected to this topic
+    return topic_syns
 
-topic_syns = []
-def get_synsets(topics_split):
-    i = 0
-    while (i < len(topics_split)):
-        for topic in topics_split:
-            x = wordnet.synsets(topic)
-            topic_syns.append(x)
-            #print(topic_syns)
-            i = i+1
-    return remove_duplicates(topic_syns)  ## cushion the fall with remove_duplicates
+# if we have a multiword topic use this
+def get_synsets_last(topics_split):
+    topic = topics_split[len(topics_split)-1]   # get the synsets connected to the last word of the topic
+    topic_syns = wordnet.synsets(topic)
+    return topic_syns
 
+# LEAVE THAT HERE FOR NOW JUST IN CASE
 # very slow unfortunately - O(n^2) but works fine for non-hashable, like my list
-def remove_duplicates(list):
-    s = []
-    for i in list:
-        if i not in s:
-            s.append(i)
-    return s
+#def remove_duplicates(list):
+#    s = []
+#    for i in list:
+#        if i not in s:
+#            s.append(i)
+#    return s
 
-############### DOESN'T WORK FOR NOW!!!!!!!
-def assign_synset(list_of_lists):
-    i = 0
-    while (i < len(list_of_lists)):
-        for list in list_of_lists:
-            list_pick = list[0]
-            print(list_pick)
-    return [list_pick]
+# from our synsets, pick the first one and assign it to the topic
+def assign_synset(topic_syns):
+    topic_syn_pick = topic_syns[0]
+    return topic_syn_pick
 
-def test(list_of_lists):
-    for list in list_of_lists:
-        list.append(3)
-    return list_of_lists
-
+# find the hypernym of the topic (works for both one-word and multi-word without variation)
 def find_hypernym(syn_pick):
     t_hyper = syn_pick.hypernyms()
     return t_hyper
 
+# from our hypernyms, pick the first one and assign it to the topic
 def assign_hypernym(t_hyper):
     hyper_pick = t_hyper[0]
     return hyper_pick
 
+# big function to pick the synset (made to work for both one-word and multi-word)
 def make_syn_pick(data):
-    topic = collect_topics(data)    # find the topic of email
-    print(topic)
-    topic_syns = get_synsets(topic) # find corresponding synsets
-    print(topic_syns)
-    syn_pick = assign_synset(topic_syns) # assign the first of those synsets to the topic
-    return syn_pick
-    
+    topics_split = collect_topics(data)    # find the topic of email
+    print(topics_split)
+    if (len(topics_split) == 1):
+        topic_syns = get_synsets_first(topics_split) # find corresponding synsets
+        print(topic_syns)
+        syn_pick_first = assign_synset(topic_syns)
+        return syn_pick_first
+    else:
+        topic_syns = get_synsets_last(topics_split)
+        print(topic_syns)
+        syn_pick_last = assign_synset(topic_syns) # assign the first of those synsets to the topic
+        return syn_pick_last
+
+# pseudo-recursion
+# keep finding and assigning hypernyms until one of the hypernym's reached is the ontology    
 def hyper_loop_rec(data):
     hyper_pick = wordnet.synset('dog.n.01')
     syn_pick = make_syn_pick(data)    
@@ -84,5 +105,3 @@ def hyper_loop_rec(data):
             print("Ontology found! Our ontology is: " + hyper_pick.name())
         else:
             print("We have not reached the desired ontology. Carrying on the search...")
-
-
