@@ -1,5 +1,6 @@
 # IMPLEMENT MULTIWORD TOPICS
 # - seperated multi-word topics into seperate words
+# - getting synsets for every word in the topic
 
 from nltk.corpus import wordnet
 from nltk.tokenize import word_tokenize
@@ -34,6 +35,7 @@ def get_synsets(topics_split):
             i = i+1
     return remove_duplicates(topic_syns)  ## cushion the fall with remove_duplicates
 
+# very slow unfortunately - O(n^2) but works fine for non-hashable, like my list
 def remove_duplicates(list):
     s = []
     for i in list:
@@ -41,11 +43,19 @@ def remove_duplicates(list):
             s.append(i)
     return s
 
-###############
-def assign_synset(topic_syns):
-    for topic_syn in topic_syns:
-        topic_syn_pick = topic_syns[0]
-    return topic_syn_pick
+############### DOESN'T WORK FOR NOW!!!!!!!
+def assign_synset(list_of_lists):
+    i = 0
+    while (i < len(list_of_lists)):
+        for list in list_of_lists:
+            list_pick = list[0]
+            print(list_pick)
+    return [list_pick]
+
+def test(list_of_lists):
+    for list in list_of_lists:
+        list.append(3)
+    return list_of_lists
 
 def find_hypernym(syn_pick):
     t_hyper = syn_pick.hypernyms()
@@ -74,3 +84,5 @@ def hyper_loop_rec(data):
             print("Ontology found! Our ontology is: " + hyper_pick.name())
         else:
             print("We have not reached the desired ontology. Carrying on the search...")
+
+
