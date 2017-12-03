@@ -1,0 +1,10 @@
+Part 1:
+- Sentences and paragraphs
+
+Part 2:
+- Write a function that takes the name of the text file and retrieves its ID (from the title?)
+Wordnet:
+- Find a way to detect the ontology of multi-word topics (such as "Hydraulic presses")
+	- need to assign the first synset!
+	- need to change the hyper_loop function to account for this change!
+- Find a way to search the rest of the text if the topic isn't successfully detected in the "Topic" part of the announcement email (might not need to do it if I can detect multi-word topics?) -- probably relatively easy
