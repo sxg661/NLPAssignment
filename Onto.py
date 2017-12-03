@@ -23,15 +23,29 @@ def trim_header(topic):
     return topic[10:len(topic)]
 
 
-## FIX!!!!
+topic_syns = []
 def get_synsets(topics_split):
-    for topic in topics_split:
-        topic_syns = wordnet.synsets(topic)
-        return topic_syn
+    i = 0
+    while (i < len(topics_split)):
+        for topic in topics_split:
+            x = wordnet.synsets(topic)
+            topic_syns.append(x)
+            #print(topic_syns)
+            i = i+1
+    return remove_duplicates(topic_syns)  ## cushion the fall with remove_duplicates
 
+def remove_duplicates(list):
+    s = []
+    for i in list:
+        if i not in s:
+            s.append(i)
+    return s
+
+###############
 def assign_synset(topic_syns):
-    syn_pick = topic_syns[0]
-    return syn_pick
+    for topic_syn in topic_syns:
+        topic_syn_pick = topic_syns[0]
+    return topic_syn_pick
 
 def find_hypernym(syn_pick):
     t_hyper = syn_pick.hypernyms()
@@ -42,7 +56,7 @@ def assign_hypernym(t_hyper):
     return hyper_pick
 
 def make_syn_pick(data):
-    topic = collect_topic(data)    # find the topic of email
+    topic = collect_topics(data)    # find the topic of email
     print(topic)
     topic_syns = get_synsets(topic) # find corresponding synsets
     print(topic_syns)
