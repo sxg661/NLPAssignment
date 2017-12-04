@@ -38,17 +38,14 @@ def get_sentences(data):
     return sentences
 
 def get_paragraphs(data):
-    paragraphs = []
 
+    paragraphRegEx = re.compile("<sentence>[^¾]*?</sentence>\n\n")
 
-    paragraphRegEx = re.compile("<sentence>.*</sentence>")
-
-    pargraphs = paragraphRegEx.findall(data)
+    paragraphs = paragraphRegEx.findall(data)
 
     for i in range(0,len(paragraphs)):
-        print(i)
         #just trims off thr new lines
-        paragraph[i] = paragraph[i][:len(paragraph[i])]
+        paragraphs[i] = paragraphs[i][:len(paragraphs[i]) - 2]
     
 
     return paragraphs

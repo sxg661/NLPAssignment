@@ -29,7 +29,6 @@ def lose_tags(tag_string):
 def find_tag_matches(tag_name,data):
     #takes the data from a file and finds all the specific tagged entities
 
-    data = data.replace("</sentence>","")
 
     #uses a regular expression to find all the tagged entities with the given tag name
     opening_tag = "<{}>".format(tag_name)

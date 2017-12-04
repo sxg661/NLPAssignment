@@ -2,10 +2,15 @@
 
 import re
 
+
+
 # IT DOESN'T WORK IF I JUST DO \.
 def find_time_matches(data):
     time = re.compile('[0-9][0-9]?\:[0-9][0-9][ ][am|AM|pm|PM|a.m|A.M|p.m|P.M]{2,3}')
-    matches = time.findall(data)
+    matches  = time.findall(data)
+    
+        
+    
     return matches
 
 # fills a dictionary with time entries with tag_name = 'stime'
@@ -32,7 +37,7 @@ def get_end_time_examples(data):
     for time in full_end_time_dict: # for every time in end dict
         time_trim = trim_first_three(time) # trim it
         if is_in_dict(time_trim, full_time_dict): # if that end time is in the dict of all times
-            full_time_dict[time_trim] = 'endtime' # change its tag from 'stime' to 'endtime'
+            full_time_dict[time_trim] = 'etime' # change its tag from 'stime' to 'endtime'
     return full_time_dict # return the modified dict of all times with all the right tags
 
 # checks if a certain time is in a certain dict

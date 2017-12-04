@@ -23,16 +23,25 @@ import NamedEntityFindingFuncts
 import ClassificationFuncts
 import FileReadingFuncts
 import SentenceTaggingFuncts
+import TimeFunct
 
 
 
 def get_named_entities(sent):
+    print(sent)
     train_sents = brown.tagged_sents()[:1000]
+    print("here1")
     emma_taggery = NamedEntityFindingFuncts.backoff_tagger(train_sents, [UnigramTagger,BigramTagger, TrigramTagger])
     name_taggery = NamedEntityFindingFuncts.NamesTagger(emma_taggery)
+
+    print("here2")
     
     strict_entities = set(NamedEntityFindingFuncts.get_ne_strict_grammar(sent,name_taggery))
+
+    print("here3")
     broad_entities = set(NamedEntityFindingFuncts.get_ne_broad_grammar(sent,name_taggery)).difference(strict_entities)
+
+    print("here4")
 
     return strict_entities, broad_entities
 
@@ -43,25 +52,14 @@ def test_tagger(sent):
     train_sents = brown.tagged_sents()[:1000]
     emma_taggery = NamedEntityFindingFuncts.backoff_tagger(train_sents, [UnigramTagger,BigramTagger, TrigramTagger])
     name_taggery = NamedEntityFindingFuncts.NamesTagger(emma_taggery)
+
+    
+
+    
     
     return name_taggery.tag(sent)
 
     
-def remove_sub_strings(entity_dict):
-    #removes an entity if it is a substring of another entity that has been picked up
-    new_entity_dict = {}
-
-    entity_keys = entity_dict.keys()
-    
-    for entity1 in entity_keys:
-        sub = False
-        for entity2 in entity_keys:
-            if entity1 in entity2 and entity1 != entity2:
-                sub = True
-        if not sub:
-            new_entity_dict[entity1] = entity_dict[entity1]
-
-    return new_entity_dict
 
 
 
@@ -131,13 +129,22 @@ def tag_named_entities(sent):
                 if ent_type != None:
                     classified_entities[entity] = ent_type
 
-    classified_entities = remove_sub_strings(classified_entities)
+    #classified_entities = remove_sub_strings(classified_entities)
 
 
     sent = tag_entities(sent, classified_entities)
 
     return sent
-            
+
+
+
+def tag_all_entities(data):
+    tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
+    tokens = tokenizer.tokenize(data)
+    tagged_tokens = []
+    for token in tokens:
+        tagged_tokens.append(tag_named_entities(token))
+    return tokens,tagged_tokens
 
 def get_in_dict(entities, tag_name):
     entities_dict = {}
@@ -149,20 +156,28 @@ def main():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
     FileReadingFuncts.get_files(path)
-    for file in ["350.txt"]:
+    for file in ["351.txt"]:
         data = FileReadingFuncts.read_file(path,file)
-        #print(data)
-        sentences = SentenceTaggingFuncts.get_sentences(data)
 
-        #tags the sentences
-        entities_to_tag = get_in_dict(sentences,"sentence")
+        #tags the times
+        entities_to_tag = TimeFunct.get_end_time_examples(data)
         data = tag_entities(data, entities_to_tag)
         
-        paragraphs = SentenceTaggingFuncts.get_paragraphs(data)
+        #tags the named entitites
+        data = tag_named_entities(data)
+        
+        #tags the sentences
+        sentences = SentenceTaggingFuncts.get_sentences(data)
+        entities_to_tag = get_in_dict(sentences,"sentence")
+        data = tag_entities(data, entities_to_tag)
 
+        
         #tags the paragraphs
+        paragraphs = SentenceTaggingFuncts.get_paragraphs(data)
         entities_to_tag = get_in_dict(paragraphs,"paragraph")
         data = tag_entities(data, entities_to_tag)
+
+        
 
         
         print(data)
