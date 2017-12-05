@@ -57,6 +57,13 @@ def writeFile(matches, output_file):
     file.close();
 
     
+def writeTaggedFile(data, file):
+    output_file = "my_tagged/{}".format(file)
 
+    file = open(output_file,"w")
+
+    file.write(data)
+
+    file.close()
 
 

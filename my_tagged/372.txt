@@ -1,0 +1,21 @@
+<0.11.8.92.12.54.36.wah+@MAPS.CS.CMU.EDU (<speaker>Wilson Harvey</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    <speaker>Talk</speaker>: "DTM from <speaker>SPOT</speaker> and Aerial Images"
+Dates:    11-Aug-92
+Time:     <stime>2:00 PM</stime>
+PostedBy: wah+ on 11-Aug-92 at 12:54 from MAPS.CS.CMU.EDU (<speaker>Wilson Harvey</speaker>)
+Abstract: 
+
+<speaker>Sorry</speaker> for the late notice on this.  -Wilson
+
+--
+
+Today at 2PM in WeH 4625, Laurent Renouard of ISTAR, a French compary
+focussing on issues in remote sensing, <speaker>will</speaker> be giving a brief talk entitled
+"DTM from <speaker>SPOT</speaker> and Aerial Images".  <sentence>Additionally, Frederic Perlant <speaker>will</speaker>
+present some preliminary results doing interferometry with RADAR imagery.</sentence>
+<sentence><speaker>Finally</speaker>, they <speaker>will</speaker> tell us a little about ISTAR.</sentence>
+-- 
+W. A. Harvey		School of Computer Science
+wah+@cs.cmu.edu		Carnegie Mellon University
+412-268-7552		Pittsburgh, PA  15213-3890	

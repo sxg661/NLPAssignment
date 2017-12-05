@@ -1,0 +1,50 @@
+<0.1.3.95.09.55.01.plp+@HOSTESS.GRAPHICS.CS.CMU.EDU (<speaker><speaker>Phyllis</speaker> Pomerantz</speaker>).0>
+Type:     AI Seminar
+<speaker>Who</speaker>:      Oren Etzioni / University of Washington
+Topic:    Learning to Understand Information on the Internet.
+<speaker>Dates</speaker>:    7-Mar-95
+Time:     <stime>3:30 PM</stime>
+Place:    5409 Wean Hall
+Duration: 1 1/2 hours
+<speaker>Host</speaker>:     Raul Valdes-Perez
+PostedBy: plp+ on 1-Mar-95 at 09:55 from HOSTESS.GRAPHICS.CS.CMU.EDU (<speaker><speaker>Phyllis</speaker> Pomerantz</speaker>)
+Abstract: 
+
+ Type:     AI Seminar
+ <speaker>Who</speaker>:      Oren Etzioni / University of Washington
+ Topic:    Learning to Understand Information on the Internet.
+ <speaker>Dates</speaker>:    7-Mar-95
+ Time:     <stime>3:30 p.m</stime>.
+ Place:    5409 Wean Hall
+ Duration: 1 1/2 hours
+ <speaker>Host</speaker>:     Raul Valdes-Perez
+
+ Title: Learning to Understand Information on the Internet.
+
+<paragraph><sentence>The explosive growth in the number and diversity of information
+sources on the Internet is rapidly outstripping our ability to find
+what we want.</sentence>  <sentence>Browsers and Indexing tools are practical, but only
+partial, solutions to this problem.</sentence>  <sentence>A number of information gathering
+agents have emerged.</sentence>  <sentence>However, because such agents require a
+programmer to hand code a model of each information source in their
+repertoire, they too are victims of information explosion.</sentence>  <sentence>This talk
+explores automatically learning models of information sources as a
+possible solution.</sentence></paragraph>
+
+<paragraph><sentence>I <speaker>will describe ILA</speaker>, a domain-independent program that learns the
+meaning of external information by explaining it in terms of internal
+categories.</sentence>  <sentence>In one experiment, ILA starts off with knowledge of local
+faculty members, quickly learns a model of the Internet service WHOIS,
+and then bootstraps to learn models of the personnel directories
+available at <speaker>Berkeley</speaker>, <speaker>Brown</speaker>, <speaker>Cal-Tech</speaker>, <speaker>Cornell</speaker>, Rice, Rutgers, and
+UCI.</sentence>  <sentence>ILA's hypothesis language is first-order conjunctions, and its
+bias is compactly encoded as a determination.</sentence>  <sentence>I introduce a
+probabilistic model of ILA that bounds its sample complexity, and show
+when this bound is tighter than the famous Haussler bound.</sentence></paragraph>
+
+This talk is based on joint work with Mike Perkowitz
+
+<speaker>Professor Etzioni</speaker> will be at <speaker>CMU <speaker>March</speaker></speaker> 6, 7 and 8th.  If you would like an
+appointment with him on Monday, <speaker>March</speaker> 6, please send mail to plp@cs, or call
+x8-7897 (<speaker>Phyllis</speaker>).
+

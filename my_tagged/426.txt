@@ -1,0 +1,75 @@
+<0.21.1.94.18.58.29.dandb+@andrew.cmu.edu.0>
+Type:     cmu.cs.scs
+Topic:    HCI Seminar 1/26
+Dates:    26-Jan-94
+Time:     3:30 - 5:00
+PostedBy: Dean Rubine on 21-Jan-94 at 18:58 from andrew.cmu.edu
+Abstract: 
+
+Wednesday, January 26
+3:30-5
+WeH 5409
+          <speaker>The Role</speaker> of <speaker>Visual Fidelity</speaker> in Instructional Simulations
+
+                               Michael <speaker>Christel</speaker>
+                               mac@sei.cmu.edu
+
+The Software Engineering Institute made use of digital video in developing an
+interactive course teaching code inspections, a formalized group process for
+finding defects in software code.  <paragraph><sentence>This course, titled "<speaker>A Cure</speaker> for the Common
+Code", is interactive in that the student not only learns about but also
+participates in code inspections.</sentence></paragraph>
+
+<paragraph><sentence>Digital video systems offer a wide spectrum of interface capabilities,
+allowing the <speaker>fidelity</speaker> of "<speaker>A Cure</speaker> for the Common Code" to vary from that of a
+home arcade game with simple graphics and slide show presentations to a
+<speaker>visually rich display</speaker> complete with full motion video.</sentence>  <sentence>Photographic
+images of an office setting and professional video of actors playing the
+roles of fellow workers can make the learning environment both engaging
+and realistic to the student.</sentence>  <sentence>However, is there any instructional
+benefit to increasing the <speaker>visual <speaker>fidelity</speaker></speaker> of the environment?</sentence>  "<speaker>A Cure</speaker>
+for the Common Code" was used in a formal experiment to address this
+question, and more specifically to address the following:
+
+  - what role does the frame rate of visual material play in the students'
+    perception of and ability to recall presented information?
+
+  - does the use of surrogate travel, rather than a single image, 
+    point-and-click navigation interface, have any effect on student 
+    recall and perception of presented material?
+
+<sentence>This talk <speaker>will briefly overview</speaker> the code inspection course, and then discuss
+the results of the <speaker>formal experiment concerning <speaker>visual <speaker>fidelity</speaker></speaker></speaker> in interfaces.</sentence></paragraph>
+
+<paragraph><sentence>This work is among the first to explore the unique interface opportunities
+which digital video offers, and a set of <speaker>guidelines will</speaker> be proposed based
+upon this research.</sentence></paragraph>
+
+                          Michael <speaker>Christel</speaker>
+
+                         Member of the Technical Staff
+                         Software Engineering Institute
+                           Carnegie Mellon University
+                             Pittsburgh, PA  15213
+                                 412-268-7799
+                                FAX: 412-268-5758
+                                 mac@sei.cmu.edu
+
+Michael <speaker>Christel</speaker> has been a member of the technical staff at the Software
+Engineering Institute for the past six years.  <paragraph><sentence>From <speaker>1987</speaker> to 1990 he worked on
+the Advanced Learning Technologies (ALT) <speaker>Project</speaker> at the SEI, creating a
+digital video code inspection course.</sentence>  <sentence>He has since worked on projects
+exploring the use of multimedia for requirements elicitation, and improving
+the utility of large multimedia databases for both software engineering tools
+and training.</sentence>  <speaker>Christel</speaker> has authored numerous papers on the ALT <speaker>Project</speaker>,
+multimedia, and software engineering, including articles on the use of digital
+
+video and rule bases for training simulations, and the implementation of
+virtual reality systems on personal computers.  <sentence>He has given a number of
+invited talks on digital video, multimedia for software engineering
+instruction, and multimedia interface issues.</sentence>  <sentence><speaker>Christel</speaker> received his Ph.D.
+from the <speaker>Georgia Institute</speaker> of Technology in the area of human computer
+interaction, focusing on practical implications for the development of
+multimedia interfaces for educational applications.</sentence></paragraph>
+
+----------------

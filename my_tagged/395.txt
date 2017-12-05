@@ -1,0 +1,47 @@
+<0.6.2.93.16.41.44.garth+@NIAGARA.NECTAR.CS.CMU.EDU (<speaker>Garth Gibson</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    WWC: Picturetel seminar: <speaker>Patterson</speaker>, Feb 10, 7-<stime>8:30 pm</stime>, <location>4623 WeH</location>
+<speaker>Dates</speaker>:    10-Feb-93
+Time:     7:00 - <etime>8:30 PM</etime>
+PostedBy: garth+ on 6-Feb-93 at 16:41 from NIAGARA.NECTAR.CS.CMU.EDU (<speaker>Garth Gibson</speaker>)
+Abstract: 
+
+            West Coast Colloquium Video-Conference Seminar
+
+            Wed Feb 10, <location>4623 Wean Hall</location>, <stime>7:15 pm</stime> - <etime>8:15 pm</etime>
+                moderated locally by <speaker>Garth Gibson</speaker>
+
+	  Observations on Massively Parallel Processors and
+	     a <speaker>Case</speaker> for a New Theoretical Model: LogP
+
+		      David A. <paragraph><sentence><speaker>Patterson</speaker>,
+		Computer Science Division/EECS Dept.</sentence>
+		 University of California, <speaker>Berkeley</speaker>
+
+Just a few years ago I doubted that massively parallel processors (MPP) 
+and software would ever converge on a common foundation, which is 
+absolutely essential if MPP is to become popular. <sentence>Today I can <speaker>see</speaker> that 
+convergence, with a machine operating 1000 times faster than the
+fastest Cray computer being feasible in just a few years.</sentence>  <sentence>Now I am 
+concerned whether computer science in general (and computer 
+science theory in particular) will take advantage of this opportunity
+to contribute to and accelerate the success of massive parallelism.</sentence> 
+
+<sentence>This talk <speaker>will first</speaker> relay my (possibly controversial) observations:
+1: We really can get to 1 TeraFLOPS(Million MFLOPS)!</sentence> <sentence>And Soon!</sentence>
+<sentence>2: Computer science has an obligation as well as an opportunity in MPP.</sentence>
+<sentence>3: MPP hardware organizations are converging, and early guesses at MPP 
+	issues were wrong.</sentence>
+<sentence>4: Topology based models are not relevant for machines and software of the 90s.</sentence>
+<sentence>5: Current theoretical models (i.e., PRAM) may be too inaccurate to expect 
+	them to lead to important contributions in MPP.</sentence></paragraph>
+
+<sentence>This is followed by an introduction to a more realistic model, called "LogP,"
+developed by architects and theoreticians at <speaker>Berkeley</speaker>.</sentence> The name LogP comes
+from the four parameters of the model:
+
+ L: Latency of communication in the network.
+ o: Overhead for the processor to send or receive a message from the network.
+ g: Gap between consecutive messages sent or received at a processor.
+ P: number of processor/memory modules.
+

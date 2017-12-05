@@ -1,0 +1,18 @@
+<0.29.9.94.10.36.59.prs+@N2.SP.CS.CMU.EDU (peter steenkiste).0>
+Type:     cmu.cs.scs
+Topic:    PSC/CS Seminar 9/30: <speaker>Dennis Gannon</speaker>
+<speaker>Dates</speaker>:    30-Sep-94
+Time:     <stime>4:00 PM</stime>
+Place:    SEI Auditorium
+PostedBy: prs+ on 29-Sep-94 at 10:36 from N2.SP.CS.CMU.EDU (peter steenkiste)
+Abstract: 
+
+
+"Tools for Object Oriented Programming on Massively Parallel Systems"
+<speaker>Dennis Gannon</speaker>, University of <speaker>Indiana</speaker>
+
+No abstract available
+
+ <speaker>Where</speaker>: SEI Auditorium
+ Date: Friday, <speaker>September</speaker> 30
+ Time: <stime>4:00 p.m</stime>.

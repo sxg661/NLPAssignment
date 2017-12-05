@@ -1,0 +1,54 @@
+<0.05.12.91.21.00.13.me@H.GP.CS.CMU.EDU (<speaker>Michael Erdmann</speaker>).0>
+Type:     Robotics Seminar
+<speaker>Who</speaker>:      <speaker>James Driscoll</speaker>
+Topic:    There is more to life than the FFT
+Dates:    6-Dec-91
+Time:     3:30
+Place:    <location>Adamson Wing</location>, Baker Hall
+Duration: 1.5 hours
+<speaker>Host</speaker>:     Danny <speaker>Sleator</speaker>
+PostedBy: me on 05-Dec-91 at 21:00 from H.GP.CS.CMU.EDU (<speaker>Michael Erdmann</speaker>)
+Abstract: 
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Friendly Reminder:
+
+   <speaker>Thanks</speaker> to Danny <speaker>Sleator</speaker> there <speaker>will</speaker> be a Robotics Seminar tomorrow.
+
+    Refreshments: 3:15
+    Talk:         3:30
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ Type:     Robotics Seminar
+ <speaker>Who</speaker>:      <speaker>James Driscoll</speaker>
+ Topic:    There is more to life than the FFT
+ Dates:    6-Dec-91
+ Time:     3:30pm
+ Place:    <location>Adamson Wing</location>, Baker Hall
+ Duration: 1.5 hours
+ <speaker>Host</speaker>:     <speaker>Sleator</speaker>
+
+                  There is more to life than the FFT
+
+                            <speaker>James Driscoll</speaker>
+                               Dartmouth
+                      Friday, <speaker>December</speaker> 6, 3:30-5:00
+                        <location>Adamson Wing</location>, Baker Hall
+
+The FFT is an important engineering tool, but its applicability is not
+universal.  <paragraph><sentence>Its utility comes from simplifying operators with a
+translational symmetry (i.e.</sentence> <sentence>linear translation invariant operators,
+convolution operators, or toeplitz matrices, depending on your bias).</sentence>
+<sentence>However, many problems in physics and engineering possess spherical
+symmetry (or other symmetry that is not translational).</sentence>  <sentence>I <speaker>will</speaker>
+explain how the ideas of Fourier analysis can be extended to the
+sphere, give an efficient algorithm for the Fourier transform there,
+and give examples of how Fourier analysis on the sphere can applied to
+computer vision, medical imaging and computations with Lie Algebras
+(of recent interest in robotics).</sentence></paragraph>
+
+<paragraph><sentence>This talk presents joint work with <speaker>Dennis Healy</speaker> and <speaker>Dan Rockmore</speaker>.</sentence></paragraph>
+
+ <speaker>Host</speaker>:  Danny <speaker>Sleator</speaker>
+FurtherDetails:  3:15   

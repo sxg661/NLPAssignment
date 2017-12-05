@@ -1,0 +1,62 @@
+<0.20.9.94.15.29.08.prs+@N2.SP.CS.CMU.EDU (peter steenkiste).0>
+Type:     cmu.cs.scs
+Topic:    9/23 CS/PSC Seminar
+Dates:    23-Sep-94
+Time:     <stime>4:00 PM</stime>
+Place:    Wean Hall 5409
+          CMU
+PostedBy: prs+ on 20-Sep-94 at 15:29 from N2.SP.CS.CMU.EDU (peter steenkiste)
+Abstract: 
+
+
+ 		  Tempest: User-Level Shared Memory
+
+			     <speaker>David Wood</speaker>
+		     Computer Sciences Department
+		       University of Wisconsin
+		       1210 West Dayton Street
+			  Madison, WI 53706
+
+Future parallel computers must execute efficiently both hand-coded
+applications and also programs written in high-level programming
+languages.  <speaker>Today's</speaker> machines limit programs to a single communication
+paradigm---message-passing or shared-memory---which results in uneven
+performance.  <paragraph><sentence>To address this problem, we have developed the Tempest
+interface, which supports shared-memory, message-passing, and hybrid
+applications.</sentence>  <sentence>Tempest enhances portability of parallel programs by
+allowing low-cost networks of workstations to provide the same
+abstractions (e.g., shared memory) as high-performance parallel
+machines.</sentence></paragraph>
+
+<paragraph><sentence>The Tempest interface consists of low-level communication and
+memory-system mechanisms.</sentence>  <sentence>Policies, such as shared memory, are
+implemented in user-level software, which allows programmers and
+compilers to customize policies to an application's semantics and
+sharing patterns.</sentence>  <sentence>Experiments show that custom cache coherency
+policies can produce upto an order-of-magnitude performance
+improvement.</sentence></paragraph>
+
+<paragraph><sentence>We have completed two implementations of the Tempest interface.</sentence>
+<sentence>Typhoon illustrates the performance of first-class hardware support
+for Tempest.</sentence>  <sentence>This proposed hardware system implements Tempest using a
+fully-programmable, user-level processor in the network interface.</sentence>
+<sentence>Blizzard demonstrates Tempest's portability by implementing the
+interface in software running on stock hardware (a Thinking Machines
+CM-5).</sentence>  <sentence>We are currently developing a third Tempest implementation by
+porting Blizzard to the Wisconsin COW (Cluster Of Workstations).</sentence></paragraph>
+
+<paragraph><sentence>This work is part of the Wisconsin Wind Tunnel project, co-led by
+<speaker>Mark Hill</speaker>, <speaker>James Larus</speaker>, and <speaker>David Wood</speaker>.</sentence></paragraph>
+
+                         Date:   Friday, <speaker>September 23</speaker>, 1994
+
+                         Time:   4 p.m.
+
+                         Place:  Wean Hall 5409
+ 				CMU
+
+Refreshments served at 3:45
+
+The <speaker>speaker will</speaker> be here all day Friday.  <sentence>Please contact 
+Barbara Sandling (sandling@cs) if you want to talk to him.
+</sentence>

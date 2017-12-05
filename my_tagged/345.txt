@@ -1,0 +1,39 @@
+<0.04.3.92.13.43.50.tmeadows@frc.ri.cmu.edu (<speaker>Tim Meadows</speaker>).0>
+Type:     cmu.cs.robotics
+Who:      <speaker>Richard W</speaker>. Longman, 
+          <speaker>Professor</speaker> of Mechanical Engineering, Columbia University
+Topic:    Learning Control for Improved Performance in 
+          Repetitive Robot Operations
+Dates:    6-Mar-92
+Time:     <stime>3:30 PM</stime>
+Place:    Baker Hall, <location>Adamson Wing</location>
+<speaker>Host</speaker>:     Hagen Schempf, x6884
+PostedBy: tmeadows on 04-Mar-92 at 13:43 from frc.ri.cmu.edu (<speaker>Tim Meadows</speaker>)
+Abstract: 
+
+**************************************************
+RI SEMINAR
+
+ WHEN:	Friday, <speaker>March</speaker> 6, 1992, <stime>3:30 PM</stime>
+
+ <speaker>WHERE</speaker>:	Baker Hall, <location>Adamson Wing</location>
+	Refreshments to be served by <stime>3:15 PM</stime>
+
+ SPEAKER:	<speaker>Richard W</speaker>. Longman, 
+ 	<speaker>Professor</speaker> of Mechanical Engineering, Columbia University
+
+ TITLE:	Learning Control for Improved Performance in 
+ 	Repetitive Robot Operations
+
+Learning control refers to control systems that can learn from previous 
+experience performing a specific task, in order to improve their performance 
+in future executions of the task. <paragraph><sentence>Although there are some precursors, the filed 
+started in 1984 with several researchers on different continents (including 
+<speaker>Professor</speaker> Longman, then Australia) addressing the problem of improving control 
+system performance for robots performing repetitive tasks on assembly lines.</sentence> 
+<sentence>The talk <speaker>will</speaker> give an overview of learning control strategies that make use of 
+control theory concepts to accomplish their learning.</sentence></paragraph>
+
+ <speaker>Host</speaker>: Hagen Schempf, x6884
+***************************************************************************
+

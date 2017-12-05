@@ -1,0 +1,37 @@
+<0.7.2.95.09.55.31.daz+@AMM.ADM.CS.CMU.EDU (<speaker>Dorothy</speaker> <speaker>A Zaborowski</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    THEORY SEMINAR
+<speaker>Dates</speaker>:    10-Feb-95
+Time:     3:30 - 5:00
+<speaker>Host</speaker>:     Avrim Blum
+PostedBy: daz+ on 7-Feb-95 at 09:55 from AMM.ADM.CS.CMU.EDU (<speaker>Dorothy</speaker> <speaker>A Zaborowski</speaker>)
+Abstract: 
+
+		  Friday, February 10, 1995
+	            Wean Hall - 3:30-5:00
+         Size-Estimation Framework with Applications 
+           to Transitive Closure and Reachability
+
+                         Edith Cohen 
+                  AT\&T Bell Laboratories
+
+Computing transitive closure and reachability information in directed
+graphs is a fundamental graph problem with many applications.  <paragraph><sentence>The
+fastest known algorithms run in $O(min(mn,n^{2.38})$ time, where $n$
+is the number of nodes and $m$ the number of edges in the graph.</sentence>  <sentence>It
+is often the <speaker>case</speaker> that the aim is to compute the size of the
+transitive closure and the number of nodes reachable from certain
+nodes rather than computing them explicitly.</sentence>  <sentence>Examples of potential
+applications are database query optimization or optimizing
+multiplications of large real-valued matrices.</sentence>  <sentence>We present an $O(m)$
+time randomized algorithm that estimates the number of nodes reachable
+from every node and the size of the transitive closure.</sentence>  <sentence>Another
+ramification of our estimation scheme is a $\tilde{O}(m)$ time
+algorithm for estimating sizes of neighborhoods in directed graphs
+with nonnegative weights.</sentence>  <sentence>Our size-estimation algorithms are much
+faster than performing the respective explicit computations and
+improve significantly over previous estimation methods.</sentence></paragraph>
+
+ <sentence><speaker>Host</speaker>: Avrim Blum
+ Appts: daz@cs
+</sentence>

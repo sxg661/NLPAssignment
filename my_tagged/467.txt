@@ -1,0 +1,58 @@
+<1.10.1.92.09.00.27.lydia+@PROOF.ER<speaker>G</speaker>O.CS.CMU.EDU (Lydia Defilippo).0>
+Type:     cmu.cs.scs
+Who:      Steven Skiena
+          Department of Computer Science
+          State University of New <speaker>York</speaker>, Stony Brook
+Topic:    Algorithms for Square Roots of <speaker>G</speaker>raphs
+Dates:    14-Jan-92
+Time:     <stime>1:30 PM</stime>
+Place:    Wean Hall 4634
+<speaker>Host</speaker>:     <speaker>Dana Scott</speaker>
+PostedBy: lydia+ on 10-Jan-92 at 09:00 from PROOF.ER<speaker>G</speaker>O.CS.CMU.EDU (Lydia Defilippo)
+Abstract: 
+
+
+Please note that <speaker>Steven Skiena will</speaker> now speak
+at 1:30 instead of 3:30 due to a conflict in seminars.
+
+ Speaker:   Steven Skiena
+            Department of Computer Science
+            State University of New <speaker>York</speaker>, Stony Brook
+
+ Date:	   <speaker>Tuesday</speaker>, <speaker>January</speaker> 14
+ Time:      <stime>1:30 pm</stime>
+ Place:     Wean Hall 4634
+
+ Topic:     Algorithms for Square Roots of <speaker>G</speaker>raphs
+
+The {\em kth power} of a graph  <speaker>G</speaker> = (<speaker>V</speaker>, E), written <speaker>G</speaker>^k,
+is defined to be the graph having <speaker>V</speaker> as its vertex set with
+vertices u, v adjacent in <speaker>G</speaker>^k if and only if
+there exists a path of length at most k between them.
+<paragraph><sentence>Similarly, graph H has a {\em kth root} <speaker>G</speaker> if <speaker>G</speaker>^k = H.
+<speaker>Powers</speaker> of graphs have several interesting properties.</sentence>
+<sentence>For example, the square of any biconnected graph and the
+cube of any connected graph is hamiltonian.</sentence></paragraph>
+
+In this talk, we present algorithms to find a square
+root <speaker>G</speaker> of a graph <speaker>G</speaker>^2 for the following special classes of graphs:
+
+	Find <speaker>G</speaker> given <speaker>G</speaker>^2, where <speaker>G</speaker> is a tree, in O(m) time.
+
+	<paragraph><sentence>Find <speaker>G</speaker> given <speaker>G</speaker>^2, where <speaker>G</speaker>^2 is planar, in O(n) time.</sentence></paragraph>
+
+	<paragraph><sentence>Find <speaker>G</speaker> given <speaker>G</speaker>^2, where <speaker>G</speaker> is a subdivided graph, in O(m n) time.</sentence></paragraph>
+
+<paragraph><sentence><speaker>Finding</speaker> square roots of subdivided graphs is equivalent to inverting
+total graphs.</sentence>
+<sentence>In addition, we present several results on the complexity
+of finding maximum cliques and hamiltonian cycles in powers of graphs.</sentence></paragraph>
+
+<paragraph><sentence>This is joint work with <speaker>Yaw-Ling Lin</speaker>.</sentence></paragraph>
+
+ <speaker>Host</speaker>: <speaker>Dana Scott</speaker>
+
+Appointments can be made through <speaker>Lydia DeFilippo</speaker>, x3063, lydia@cs.cmu.edu.
+
+<sentence>Steve Skiena will be at CMU Monday, <speaker>January</speaker> 13, and <speaker>Tuesday</speaker>, February 14.
+</sentence>

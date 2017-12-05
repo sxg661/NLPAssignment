@@ -1,0 +1,39 @@
+<0.20.11.92.08.56.55.tmeadows@frc.ri.cmu.edu (<speaker>Tim Meadows</speaker>).0>
+Type:     cmu.cs.scs
+Who:      <speaker>Eric Krotkov</speaker> and <speaker>Reid Simmons</speaker>
+          Carnegie Mellon University
+Topic:    Autonomous Walking for the Ambler Planetary
+          Exploration Robot
+<speaker>Dates</speaker>:    20-Nov-92
+Time:     3:30 - <etime>5:00 PM</etime>
+Place:    Baker Hall - Adamson Wing
+Host:     <speaker>Hagen Schempf</speaker>, x6884
+PostedBy: tmeadows on 20-Nov-92 at 08:56 from frc.ri.cmu.edu (<speaker>Tim Meadows</speaker>)
+<speaker>Abstract</speaker>: 
+
+RI SEMINAR
+
+ <speaker>WHEN</speaker>:		Friday, 20 <speaker>November 1992</speaker>, 3:30 - <etime>5:00 PM</etime>
+		<speaker>Refreshments</speaker> to be served by <stime>3:15 PM</stime>
+
+ <speaker>WHERE</speaker>:		Baker Hall - Adamson Wing
+
+ SPEAKERS: 	 	<speaker>Eric Krotkov</speaker> and <speaker>Reid Simmons</speaker>
+ 		Carnegie Mellon University
+
+ TITLE:		Autonomous Walking for the Ambler Planetary
+ 		Exploration Robot
+
+ ABSTRACT:		Previously Posted
+
+ <speaker>HOST</speaker>:		<speaker>Hagen Schempf</speaker>, x6884
+
+---
+****************|**************************|**************************
+*               |                          |                         *
+*<speaker>Tim Meadows</speaker>    |  Field Robotics Center   | Carnegie Mellon Univ.   *
+*               |                          |                         *
+*412-268-7085   |  Fax: 412-682-1793       | tmeadows@frc.ri.cmu.edu *
+*               |                          |                         *
+**********************************************************************
+

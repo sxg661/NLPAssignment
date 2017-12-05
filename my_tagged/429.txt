@@ -1,0 +1,27 @@
+<0.28.1.94.10.19.08.plp+@PHYLLIS.ADM.CS.CMU.EDU (<speaker>Phyllis Pomerantz</speaker>).0>
+Type:     AI Seminar
+<speaker>Who</speaker>:      <speaker>Dan Weld</speaker>, University of Washington
+Topic:    Planning: Recent Results
+<speaker>Dates</speaker>:    8-Feb-94
+Time:     <stime>3:30 PM</stime>
+Place:    5409 Wean Hall
+Host:     <speaker>Michael Erdmann</speaker>
+PostedBy: plp+ on 28-Jan-94 at 10:19 from PHYLLIS.ADM.CS.CMU.EDU (<speaker>Phyllis Pomerantz</speaker>)
+<speaker>Abstract</speaker>: 
+
+ Type:     AI Seminar
+ <speaker>Who</speaker>:      <speaker>Dan Weld</speaker>, University of Washington
+ Topic:    Planning: Recent Results
+ <speaker>Dates</speaker>:    8-Feb-94
+ Time:     <stime>3:30 p.m</stime>.
+ Place:    5409 Wean Hall
+ Host:     <speaker>Michael Erdmann</speaker>
+
+                        (not available as yet)
+
+ FurtherDetails: For appointments: <speaker>Phyllis Pomerantz</speaker> (plp@cs) or (X8-7897)
+
+<speaker>Dan Weld</speaker> <speaker>will</speaker> arrive on Monday, Feb. 7 and <speaker>will</speaker> be scheduling appointments
+from <stime>2:30 p.m</stime>. <paragraph><sentence>on into the evening, and all day on <speaker>Tuesday</speaker>.</sentence></paragraph>
+
+FurtherDetails: For appointments: <speaker>Phyllis Pomerantz</speaker> (plp@cs) or (X8-7897)    

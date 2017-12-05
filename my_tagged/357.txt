@@ -1,0 +1,35 @@
+<0.13.11.92.09.00.29.tmeadows@resumix.portal.com (<speaker>Tim Meadows</speaker>).0>
+Type:     cmu.cs.robotics
+Who:      <speaker>Charles R</speaker>. <speaker>Price - NASA</speaker>, <speaker>Johnson Space</speaker> Center
+Topic:    Space Robotics Activities at the <speaker>Johnson Space</speaker> Center
+Dates:    13-Nov-92
+Time:     <stime>3:30 PM</stime>
+Place:    Baker Hall <location>Adamson Wing</location>
+<speaker>Host</speaker>:     <speaker>Hagen Schempf</speaker>, x6884
+PostedBy: tmeadows on 13-Nov-92 at 09:00 from resumix.portal.com (<speaker>Tim Meadows</speaker>)
+Abstract: 
+
+RI SEMINAR
+
+ <speaker>WHEN</speaker>:		Friday, <speaker>November</speaker> 13, 1992, <stime>3:30 PM</stime>
+		Refreshments to be served by <stime>3:15 PM</stime>
+
+ <speaker>WHERE</speaker>:		Baker Hall <location>Adamson Wing</location>
+
+ SPEAKER:		<speaker>Charles R</speaker>. <speaker>Price - NASA</speaker>, <speaker>Johnson Space</speaker> Center
+
+ TITLE:		Space Robotics Activities at the <speaker>Johnson Space</speaker> Center
+
+ Abstract:		Previously Posted
+
+ <speaker>HOST</speaker>:		<speaker>Hagen Schempf</speaker>, x6884
+
+---
+****************|**************************|**************************
+*               |                          |                         *
+*<speaker>Tim Meadows</speaker>    |  Field Robotics Center   | Carnegie Mellon Univ.   *
+*               |                          |                         *
+*412-268-7085   |  Fax: 412-682-1793       | tmeadows@frc.ri.cmu.edu *
+*               |                          |                         *
+**********************************************************************
+

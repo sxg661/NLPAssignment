@@ -1,0 +1,53 @@
+<0.19.10.92.13.54.54.tmeadows@resumix.portal.com (<speaker>Tim Meadows</speaker>).0>
+Type:     cmu.cs.scs
+Who:      Asst. <speaker>Professor Harold</speaker> L. Alexander
+Topic:    Research in Teleoperated and Cooperative Control 
+          of Free-Flying Space Robots
+Dates:    23-Oct-92
+Time:     3:30 - <etime>5:00 PM</etime>
+Place:    Baker Hall <location>Adamson Wing</location>
+<speaker>Host</speaker>:     <speaker>Hagen Schempf</speaker>, x6884
+PostedBy: tmeadows on 19-Oct-92 at 13:54 from resumix.portal.com (<speaker>Tim Meadows</speaker>)
+Abstract: 
+
+  RI SEMINAR
+
+ <speaker>WHEN</speaker>:	Friday, <speaker>23 October 1992</speaker>; 3:30 - <etime>5:00 pm</etime>
+	Refreshments to be served by <stime>3:15 pm</stime>
+
+ <speaker>WHERE</speaker>:	Baker Hall <location>Adamson Wing</location>
+
+ SPEAKER:	Asst. <speaker>Professor Harold</speaker> L. Alexander
+
+ TITLE:	Research in Teleoperated and Cooperative Control 
+ 	of Free-Flying Space Robots
+
+The MIT Laboratory for Space Teleoperation and Robotics (L<speaker>STAR</speaker>) is involved in the study of free-flying space robotic vehicles for performing extravehicular assembly, servicing, and repair.  <paragraph><sentence><speaker>L<speaker>STAR</speaker>'s</speaker> experimental activities include both neutral-buoyancy and virtual-environment experiments that target the human-robot teleoperator interface, as well as cooperative, automatic control systems that work to aid the human operator.</sentence></paragraph>
+
+<paragraph><sentence><speaker>L<speaker>STAR</speaker>'s</speaker> neutral-buoyancy robot, <speaker>STAR</speaker>, was designed to be serviceable, reliable, and flexible.</sentence>  <sentence>In order to support experiments combining human and automatic control, <speaker>STAR</speaker> is equipped with a real-time vision-based control system that has been used to demonstrate high-quality real-time control of <speaker>STAR</speaker>'s position and orientation at a simulated worksite.</sentence>  <sentence><speaker>STAR</speaker> has also been equipped recently with a three-degree-of-freedom manipulator arm to support 
+experiments in teleoperator positioning dexterity as well as simple, autonomous fetch-and-return experiments.</sentence></paragraph>
+
+<paragraph><sentence><speaker>L<speaker>STAR</speaker>'s</speaker> virtual-environment system is designed to focus on the remote-vision systems used by a remote-vehicle operator to sense and control the vehicle's position and orientation in its environment.</sentence>  <sentence>It is able to simulate teleoperation of vehicles functioning in two or three dimensions, with a variety of vehicle dynamics and visual environments.</sentence>  <sentence>It supports both fixed-monitor and helmet-mounted displays, with or without simulated head-tracking of the remote cameras.</sentence>  <sentence>Its primary current function is to 
+study the use of sophisticated head-tracking stereoscopic camera 
+systems and helmet-mounted displays, and to find ways to improve operator perception and control of vehicle motion using such systems.</sentence></paragraph>
+
+ <speaker>HOST</speaker>:	<speaker>Hagen Schempf</speaker>, x6884
+
+---
+****************|**************************|**************************
+*               |                          |                         *
+*<speaker>Tim Meadows</speaker>    |  Field Robotics Center   | Carnegie Mellon Univ.   *
+*               |                          |                         *
+*412-268-7085   |  Fax: 412-682-1793       | tmeadows@frc.ri.cmu.edu *
+*               |                          |                         *
+**********************************************************************
+
+---
+****************|**************************|**************************
+*               |                          |                         *
+*<speaker>Tim Meadows</speaker>    |  Field Robotics Center   | Carnegie Mellon Univ.   *
+*               |                          |                         *
+*412-268-7085   |  Fax: 412-682-1793       | tmeadows@frc.ri.cmu.edu *
+*               |                          |                         *
+**********************************************************************
+

@@ -1,0 +1,44 @@
+<0.6.10.92.13.24.07.tmeadows@resumix.portal.com (<speaker>Tim Meadows</speaker>).0>
+Type:     cmu.cs.robotics
+Topic:    Antarctic Exploration Robotics
+Dates:    9-Oct-92
+Time:     3:30 - <etime>5:00 PM</etime>
+Place:    Baker Hall <location>Adamson Wing</location>
+<speaker>Host</speaker>:     <speaker>Hagen Schempf</speaker>, x6884
+PostedBy: tmeadows on 6-Oct-92 at 13:24 from resumix.portal.com (<speaker>Tim Meadows</speaker>)
+<speaker>Abstract</speaker>: 
+
+RI SEMINAR
+
+ <speaker>WHEN</speaker>:		Friday, <speaker>October</speaker> 9, 1992, 3:30 - <etime>5:00 PM</etime>
+		Refreshments to be served by <stime>3:15 PM</stime>
+
+ <speaker>WHERE</speaker>:		Baker Hall <location>Adamson Wing</location>
+
+ SPREAKER:		<speaker>Dr</speaker>. William "Red" L. Whittaker-
+ 		<speaker>Principal Scientist</speaker> and <speaker>Director</speaker>, 
+ 		The Field Robotics Center- CMU
+
+ TITLE:		Antarctic Exploration Robotics
+
+CMU's <speaker>DANTE</speaker> robot will soon explore an active volcano in Antarctica. 
+<paragraph><sentence><speaker>DANTE</speaker> is a remote geologist and a harbinger of polar and planetary robots.</sentence> 
+<sentence>The exploration objective of the project is to study the gas from the lava 
+lake.</sentence> <sentence>The robotics objectives of this program are to navigate the extreme 
+terrain of the crater walls, and to operate in harsh conditions.</sentence> <sentence>The 
+technical challenges include perception, locomotion and mission 
+performance in planet-like conditions.</sentence> <sentence>The system envisioned for 
+this exploration includes a novel walking robot, camera and scanner 
+vision, scientific sampling devices, remote interfaces and a satellite 
+data link for live feedback to the US.</sentence></paragraph>
+
+<paragraph><sentence>This seminar profiles the technical challenges with progress and 
+approaches that address them.</sentence> <sentence>Examples include a new laser range 
+scanner for terrain modeling, non-contact foot sensing and mechanics 
+for combining the tension of a climbing rope with the motions of a 
+walking robot.</sentence> <sentence>A lab visit following the presentation provides the 
+opportunity to view results to date.</sentence></paragraph>
+
+ <speaker>Host</speaker>: <speaker>Hagen Schempf</speaker>, x6884
+*************************************************
+

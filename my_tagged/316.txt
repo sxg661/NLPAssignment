@@ -1,0 +1,38 @@
+<0.31.3.95.11.59.25.plp+@HOSTESS.GRAPHICS.CS.CMU.EDU (<speaker>Phyllis Pomerantz</speaker>).0>
+Type:     Joint AI/HCI Seminar
+Who:      <speaker>Harold Cohen</speaker> / UC at San Diego
+Topic:    <speaker>AARON</speaker>: In <speaker>Living Color</speaker>
+<speaker>Dates</speaker>:    18-Apr-95
+Time:     <stime>3:30 PM</stime>
+Place:    5409 Wean Hall
+Duration: 1 1/2 hours
+<speaker>Host</speaker>:     <speaker>Herbert Simon</speaker>
+PostedBy: plp+ on 31-Mar-95 at 11:59 from HOSTESS.GRAPHICS.CS.CMU.EDU (<speaker>Phyllis Pomerantz</speaker>)
+<speaker>Abstract</speaker>: 
+
+ Type:     Joint AI/HCI Seminar
+ Who:      <speaker>Harold Cohen</speaker> / UC at San Diego
+ Topic:    <speaker>AARON</speaker>: In <speaker>Living Color</speaker>
+ <speaker>Dates</speaker>:    18-Apr-95
+ Time:     <stime>3:30 p.m</stime>.
+ Place:    5409 Wean Hall
+ Duration: 1 1/2 hours
+ <speaker>Host</speaker>:     <speaker>Herbert Simon</speaker>
+
+ <speaker>AARON</speaker>: In <speaker>Living Color</speaker>.
+
+<paragraph><sentence>During the past four years, work on the <speaker>AARON</speaker> program has been directed
+primarily to giving it the ability to color its own drawings, and most
+recently to providing it with a painting machine with which it could do
+so in the real world.</sentence> 
+
+<sentence><speaker>Harold Cohen</speaker> discusses some of the issues that have arisen in this
+task; for example, the problem of mapping the results of working in
+a three-color additive system to a real world n-color subtractive 
+system.</sentence> <sentence><speaker>AARON</speaker> makes its debut in color at the Computer Museum in <speaker>Boston</speaker>
+on <speaker>April</speaker> 1, and Cohen assesses the degree to which the task has been 
+accomplished.</sentence></paragraph>
+
+ FurtherDetails: For details send mail to valdes@cs
+
+FurtherDetails: For details send mail to valdes@cs    

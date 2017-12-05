@@ -1,0 +1,38 @@
+<0.1.1<sentence>2.</sentence>93.00.0<sentence>2.</sentence>30.marcos@gs100.sp.cs.cmu.edu (Marco J <speaker>Schumacher</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    MSE End-of-Semester Presentation
+Dates:    3-Dec-93
+Time:     <stime>11:00 AM</stime> - <etime>12:00 PM</etime>
+PostedBy: marcos on 1-Dec-93 at 00:02 from gs100.sp.cs.cmu.edu (Marco J <speaker>Schumacher</speaker>)
+Abstract: 
+
+		 Master of Software Engineering (MSE)                 
+     Final End-of-Semester Presentation of the Studio 92-93 Team
+
+                    ------------------------------        
+		    "Hasta La Vista, Tessellator!"
+                    ------------------------------        
+
+			    SEI Auditorium
+		December 3 from <stime>11:00 am</stime> to 12:00 noon
+The <speaker>MSE 92-93 studio team will</speaker> present a final review of its T2 project,
+the development of software for the Tessellator robot. <sentence>The Tessellator 
+is designed by the Field Robotics Center to service the tiles of NASA's
+Space Shuttles.</sentence> <sentence>The T2 team contributes the positioning system for the
+robot's manipulator and part of the high-level controller.</sentence> 
+
+The <speaker>presentation will</speaker> cover two topics:
+
+1. Project Summary
+
+   This <speaker>part will describe</speaker> the Tessellator project and highlight the 
+   T2 team's contributions.
+
+<sentence>2.</sentence> Requirements Engineering
+
+   This <speaker>part will focus</speaker> on an area the T2 team considers to be crucial
+   in software development: requirements engineering. The presentation
+   will discuss the challenges faced by the team and the methods (such
+   as formal specification and peer reviews) used to tackle the problems. 
+
+-----

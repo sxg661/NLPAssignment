@@ -1,0 +1,69 @@
+<0.22.9.94.08.52.36.mp3r+@MARGE.ADM.CS.CMU.EDU (Margaret Profeta).0>
+Type:     cmu.cs.scs
+Topic:    REMINDER - <speaker>KATZ TALK</speaker>
+<speaker>Dates</speaker>:    22-Sep-94
+Time:     <stime>3:30 PM</stime> - <etime>5:00 PM</etime>
+<speaker>Host</speaker>:     M. Satyanarayanan
+PostedBy: mp3r+ on 22-Sep-94 at 08:52 from MARGE.ADM.CS.CMU.EDU (Margaret Profeta)
+Abstract: 
+
+                            SPECIAL SCS SEMINAR
+
+                     PROFESSOR <speaker>KATZ GOES</speaker> <speaker>TO WASHINGTON</speaker>
+
+                           <speaker>Professor</speaker> Randy Katz
+                         ARPA-CSTO and UC <speaker>Berkeley</speaker>
+
+                       Thursday, <speaker>September</speaker> 22, 1994
+
+                    WeH 7500      <stime>3:30 p.m</stime>. <sentence>- <etime>5:00 p.m</etime>.</sentence>
+     The  <speaker>speaker will describe</speaker> his rather unexpected experiences as a
+     mere technologist in the corridors of  power  in  <speaker>Washington</speaker>.  By
+     being  in  the  right place at the right time, he was selected as
+     co-chair of the White House Information  Technology  Task  <speaker>Force</speaker>,
+     which   was   tasked   during  the  early  days  of  the  Clinton
+     Administration  to  recommend  a  new  computer  system  for  the
+     Executive  <speaker>Office</speaker>  of  the  President.    His experiences include
+     bringing  the  Internet  to  the  White  House  and  establishing
+     Internet   accounts   for   the   President  and  Vice  President
+     (president,vice.president@whitehouse.gov), participating  on  the
+     Vice  President's  National  Performance  Review  to  re-engineer
+     government through information technology, almost  knocking  over
+     the President with a laserprinter, and inspecting the fiber optic
+     network on board Air <speaker>Force</speaker> One.
+
+      <speaker>Host</speaker>: M. Satyanarayanan
+
+     * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ * _ *
+
+                                 Biography
+
+         Randy  Howard  Katz  was born in <speaker>Brooklyn</speaker>, NY in 1955. He
+         received an A.B. degree from Cornell University in  1976,
+         and  the  M.S.  and Ph.D.  degrees from the University of
+         California, <speaker>Berkeley</speaker> in 1978 and 1980  respectively,  all
+         in  computer  science.   He was a Cornell College Scholar
+         and held an IBM Predoctoral Fellowship at <speaker>Berkeley</speaker>.
+
+         He joined the faculty of the Computer Sciences Department
+         at the University of Wisconsin-Madison in <speaker>1981</speaker>.  In 1983,
+         he  returned  to  <speaker>Berkeley</speaker>,  where  he  was  promoted  to
+         Associate Profesor with tenure in <speaker>1985</speaker> and Full <speaker>Professor</speaker>
+         in 1989. <speaker>Professor</speaker> Katz was a National Science Foundation
+         Presidential  Young  Investigator from 1984-1989 and held
+         an IBM Faculty Development Award in 1984-<speaker>1985</speaker>.
+
+         He has written over 100 technical papers and two books on
+         computer-aided    design    databases,    VLSI   systems,
+         multiprocessor  architecture,  disk  and   tape   storage
+         systems,  and  wireless  computing.  He is best known for
+         leading the <speaker>Berkeley</speaker> RAID  <speaker>Project</speaker>,  a  high  performance
+         fault tolerant storage system constructed from very large
+         numbers of low cost, small sized commodity  disk  drives.
+         He  has  won  numerous  best  paper and best presentation
+         awards, and was given the Distinguished Teaching Award of
+         the  <speaker>Berkeley</speaker>  campus  in  1992. He is currently on leave
+         from <speaker>Berkeley</speaker> to the Computer Systems  Technology  <speaker>Office</speaker>
+         of the Advanced Research <speaker>Project</speaker>s, where he is developing
+         ARPA's  program  plans  for  the   National   Information
+         Infrastructure.

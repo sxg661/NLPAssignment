@@ -1,0 +1,18 @@
+<0.16.1.95.11.46.22.copetas+@GANDALF.CS.CMU.EDU (Catherine Copetas).0>
+Type:     cmu.cs.scs
+Topic:    <speaker>APPLE COMPUTER</speaker> TALK
+Dates:    26-Jan-95
+Time:     12:00 - <etime>1:30 PM</etime>
+PostedBy: copetas+ on 16-Jan-95 at 11:46 from GANDALF.CS.CMU.EDU (Catherine Copetas)
+Abstract: 
+
+<speaker>Kai-Fu Lee</speaker> and <speaker><speaker>Rick</speaker> Shriner</speaker> from <speaker>Apple Computer</speaker> <speaker>will</speaker> give a
+presentation on the Apple Core Technology group and the Advanced
+Technology Group on Thursday, <speaker>January 26</speaker> from 12:00-<stime>1:30 pm</stime> in
+Wean 4625. <sentence>They <speaker>will</speaker> bring some of the latest Apple technologies
+in communications, telephony, multimedia, and speech.</sentence> <sentence><speaker>Rick</speaker> and Kai-Fu
+invite interested grads and undergrads to attend this informal
+demonstration and discussion.</sentence>  <sentence>Graduate students interested in
+<speaker>potential job opportunities</speaker> are particularly encouraged to attend.</sentence>
+<sentence><speaker>Pizza <speaker>will</speaker></speaker> be served.
+</sentence>

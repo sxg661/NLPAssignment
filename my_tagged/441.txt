@@ -1,0 +1,104 @@
+<0.10.5.94.12.48.42.copetas+@GANDALF.CS.CMU.EDU (Catherine Copetas).0>
+Type:     cmu.cs.scs
+Who:      <speaker>Joel S</speaker>. <speaker>Birnbaum</speaker>, Ph.D
+          Senior Vice President of Research and Development
+          <speaker>Director</speaker>, Hewlett-Packard Laboratories
+Topic:    A FREE OBJECT TECHNOLOGY TELECAST/SEMINAR
+<speaker>Dates</speaker>:    11-May-94
+Time:     11:00 - 5:00
+PostedBy: copetas+ on 10-May-94 at 12:48 from GANDALF.CS.CMU.EDU (Catherine Copetas)
+<speaker>Abstract</speaker>: 
+
+   HEWLETT-PACKARD PRESENTS:
+   "A FREE OBJECT TECHNOLOGY TELECAST/SEMINAR"
+
+   Cyert Hall Room 100 - WEDNESDAY, <speaker>MAY</speaker> 11, 1994
+                         11:00-5:00 EST
+          "BUILDING THE ENTERPRISE THROUGH OBJECT TECHNOLOGY"
+
+* Increase Competitiveness
+* Increase Maintainability
+* Enjoy Flexibility in Application Functionality
+* Learn about Advances in Technology
+* Gain Productivity through Reuse
+* Reduce Costs
+
+To gain the competitive advantage in today's rapidly
+changing business environment, you need to respond
+quickly to the market opportunities.  <paragraph><sentence>Through object
+technology you can provide the flexibility needed for
+this market.</sentence>  <sentence>Objects enable firms to deliver proprietary
+software solutions rapidly as well as integrate the
+entire operation with a client/server architecture.</sentence>
+<sentence>Hewlett-Packard can offer you a clear path to
+object-based computing through products, programs,
+consulting, and solutions that are available today.</sentence></paragraph>
+
+<paragraph><sentence>LEARN FIRST HAND.</sentence>
+<sentence>Hewlett-Packard <speaker>will</speaker> broadcast through NTU (National Technology
+University) a special event focusing on object-oriented technology.</sentence>
+<sentence>This <speaker>telebroadcast <speaker>will</speaker></speaker> feature key speakers from HP Laboratories as
+well as commercial examples of how an object technology is used in
+the telecommunications and financial industries.</sentence></paragraph>
+
+Here are highlights of what you'll be hearing from some of the
+ speakers:
+
+ <speaker>Joel S</speaker>. <speaker>Birnbaum</speaker>, Ph.D
+ Senior Vice President of Research and Development
+ <speaker>Director</speaker>, Hewlett-Packard Laboratories
+
+<speaker>Dr</speaker>. <paragraph><sentence><speaker>Birnbaum</speaker>'s talk <speaker>will</speaker> set the stage for the rest of the NTU
+broadcast.</sentence>  He <speaker><speaker>will</speaker> discuss</speaker> how the first beneficiaries of
+object technology <speaker>will</speaker> be software developers;  objects help
+manage complexity, encourage reuse, and lead to better, more
+maintainable code. <sentence>The promise of object technology is that
+software designed to match the <speaker>way</speaker> people think <speaker>will</speaker> be easier
+to use and more useful.</sentence></paragraph>
+
+<paragraph><sentence><speaker>Jeff <speaker>Eastman</speaker></speaker>, Ph.D.</sentence>
+Consulting Engineer, Hewlett-Packard
+Software Engineering Systems Division
+
+<speaker>Dr</speaker>. <sentence><speaker>Eastman</speaker> is the chief architect of HP's Distributed
+Smalltalk.</sentence>  His <speaker>presentation <speaker><speaker>will</speaker> discuss</speaker></speaker> how distributed
+systems are inherently object-oriented;  thus, it is natural to
+use object technology in their design and implementation.  <sentence>The
+Object Management Group's Common Object Request Broker
+Architecture (CORBA) is a set of emerging industry standards for
+the construction of object-oriented distributed systems and
+applications.</sentence>  <sentence>This talk <speaker><speaker>will</speaker> assess</speaker> the state-of-the-art in the
+CORBA arena and provide an architectural framework for
+discussing distributed computing systems.</sentence></paragraph>
+
+<paragraph><sentence><speaker>Mary E</speaker>.S.</sentence> Loomis, Ph.D.
+<speaker>Director</speaker>, Software Technology Lab
+Hewlett-Packard Laboratories
+
+<speaker>Dr</speaker>. <sentence>Loomis has over 20 years' experience in software engineering
+and data management.</sentence>  <sentence>Her presentation <speaker>will</speaker> focus on object
+database management systems (ODBMS).</sentence>  <sentence>Topics include: sources of
+object persistence, architectures of ODBMS products, extended
+relational and language bound, object model support, distributed
+functionality, and standards and technical directions.</sentence></paragraph>
+
+<speaker>Derek <speaker>Coleman</speaker></speaker>
+Manager, Software Reuse Department
+Hewlett-Packard Laboratories
+
+<speaker>Mr. <speaker>Coleman</speaker></speaker> is a co-author of "Object-oriented Development:  the
+Fusion Method," published by Prentice-Hall.  <paragraph><sentence>Fusion is an
+object-oriented method that was developed to meet the needs of
+HP's large and diverse software engineering community.</sentence>  <sentence>The
+presentation <speaker>will</speaker> explain the Fusion method and its underlying
+rationale.</sentence>  <sentence>The talk <speaker>will</speaker> also present HP's experiences
+introducing Fusion into actual use on live projects.</sentence>  <sentence>His
+<speaker>presentation <speaker>will</speaker> conclude</speaker> with a status report on <speaker>CASE tools</speaker>
+and current research.</sentence></paragraph>
+
+Real world examples:
+
+In addition to these specialized presentations, the telecast
+<speaker>will</speaker> feature industrial colleagues presenting how their use of
+object technology and object-oriented development tools greatly
+enhanced their application development process.

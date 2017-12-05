@@ -1,0 +1,47 @@
+<0.22.11.91.01.03.58.me@H.GP.CS.CMU.EDU (<speaker>Michael Erdmann</speaker>).0>
+Type:     cmu.cs.robotics
+Topic:    Robotics Seminar, <speaker>Jeff</speaker> Kerr, Friday Nov 22, 3:30, <location>Adamson Wing</location>, Baker Hall
+<speaker>Dates</speaker>:    22-Nov-91
+Time:     3:30
+Place:    <location>Adamson Wing</location>, Baker Hall
+<speaker>Host</speaker>:     <speaker>Michael Erdmann</speaker>, x7883
+PostedBy: me on 22-Nov-91 at 01:03 from H.GP.CS.CMU.EDU (<speaker>Michael Erdmann</speaker>)
+Abstract: 
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	     Friendly reminder:  Robotics Seminar Today!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+<speaker>Jeff</speaker> Kerr <speaker>will</speaker> be in the Manipulation Lab in the late morning,
+chatting about research.   <paragraph><sentence>If you don't have a scheduled appointment
+and would like to chat with <speaker>Jeff</speaker> feel free to drop by.</sentence>  --- Mike
+
+------------------------------------------------------------------------------
+
+	  Technology Transfer in Robotics: A Worm's Eye View
+
+			      <speaker>Jeff</speaker> Kerr
+			 Zebra Robotics, Inc.
+			Palo Alto, California
+
+Ten years ago, while robotics was viewed as the next industry to follow the
+huge advances and successes of the electronics and computer industry, there
+were only a handful of robotics research labs around the world.  <sentence>Now, with
+robotics making its <speaker>way</speaker> into the mainstream engineering curriculum of many
+universities and with hundreds of research groups emerging around the world,
+the robotics industry itself is proving itself to be one of the great
+commercial disappointments of the last decade, with growth at a <speaker>snails pace</speaker>
+and with innovative technological advances extremely rare.</sentence>  <sentence>Zebra Robotics,
+for the past five years, has been attempting to commercialize force control
+capabilities for robots.</sentence> <sentence>I <speaker>will</speaker> be discussing some of my experiences in
+trying to effect technology transfer and what I <speaker>see</speaker> might be some of the
+reasons and some of the solutions to the great disparity between what is
+done in research labs and what is available commercially.</sentence></paragraph>
+
+-----------------------------------------
+Refreshments at 3:15
+Talk at 3:30
+ Location:  <location>Adamson Wing</location>, Baker Hall
+-----------------------------------------
+ <speaker>Host</speaker>: <speaker>Michael Erdmann</speaker>, x7883

@@ -1,0 +1,40 @@
+<0.21.10.91.10.53.06.jean+@A.GP.CS.CMU.EDU (<speaker>Jean Harpley</speaker>).0>
+Type:     cmu.cs.robotics
+Topic:    REMINDER - <speaker>Li Talk</speaker> Today
+Dates:    21-Oct-91
+Time:     1:30 - <etime>3:00 PM</etime>
+<speaker>Host</speaker>:     <speaker>Matt Mason</speaker>              Appointments: <speaker>Jean Harpley</speaker>, jean@cs, X3802
+PostedBy: jean+ on 21-Oct-91 at 10:53 from A.GP.CS.CMU.EDU (<speaker>Jean Harpley</speaker>)
+Abstract: 
+                                                             Special Seminar
+
+                                  Zexiang Li
+                         Robotics Research Laboratory
+                  Courant Institute of Mathematical Sciences
+                              New York University
+
+                  Foundations of Nonholonomic Motion Planning
+
+                            Monday, 21 October 1991
+                           1:30 - <etime>3:00 PM</etime>,  <location>8220 WeH</location>
+    In this talk, I <speaker><speaker>will</speaker> first</speaker> summarize applications of Nonholonomic
+    Motion Planning (NMP) to dextrous manipulation or assembly with a
+    robotic hand, parking a vehicle with/without trailers, attitude
+    control of a satellite using rotors or solar panel positioners,
+    reconfiguration of a space structure (e.g., a space-station or a
+    space platform/manipulator system) using internal motion and
+    maneuvering in mid-air by a spring-board diver, a gymnast and a
+    <speaker>falling cat</speaker>.  Then, I <speaker><speaker>will</speaker> describe</speaker> the nature of nonholonomic
+    constraints or nonintegrable conservation laws associated with
+    each of the above systems and the formulation of nonholonomic
+    motion planning problems.  I <speaker>will</speaker> show that a NMP problem is
+    equivalent to the constructive nonlinear controllability problem
+    of a nonlinear control system without drift.  I <speaker>will</speaker> also look at
+    the existence of a motion problem for a NMP problem and highlight
+    several new results we have obtained.  <speaker>Finally</speaker>, I <speaker>will</speaker> present a
+    simple but effective algorithm, called the Basis Algorithm, for
+    computing near optimal solutions of a NMP problem, togther with
+    simulation results. A simulation package implementing the Basis
+    Algorithm <speaker>will</speaker> be discussed if time permits.
+
+     <speaker>Host</speaker>: <speaker>Matt Mason</speaker>              Appointments: <speaker>Jean Harpley</speaker>, jean@cs, X3802

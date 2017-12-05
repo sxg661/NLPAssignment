@@ -53,17 +53,22 @@ def get_words( entity ):
     url_data = json.loads( url_data )
     #loops through all the search hits (we use keys in square brackets, because url_data
     #is a dictionary object
-    for entry in url_data['query']['search']:
-        #gets the "snippet", which is the bit with the words
-        text = entry["snippet"]
-        #removes the span tags, because they don't help at all
-        text = text.replace("</span>","")
-        text = text.replace("<span class=\"searchmatch\">","")
-        #splits the remaining text into individual words
-        text = TweetTokenizer().tokenize(text)
-        #this loop checks every token to see if it is a word and only keeps words in the list 
-        text = [token for token in text if is_word(token)]
-        #it adds this to our word list
-        words = words + text
+    try:
+        for entry in url_data['query']['search']:
+            #gets the "snippet", which is the bit with the words
+            text = entry["snippet"]
+            #removes the span tags, because they don't help at all
+            text = text.replace("</span>","")
+            text = text.replace("<span class=\"searchmatch\">","")
+            #splits the remaining text into individual words
+            text = TweetTokenizer().tokenize(text)
+            #this loop checks every token to see if it is a word and only keeps words in the list 
+            text = [token for token in text if is_word(token)]
+            #it adds this to our word list
+            words = words + text
+    except Exception:
+        return []
+        
+    
 
     return words

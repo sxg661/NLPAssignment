@@ -1,0 +1,52 @@
+<1.6.4.94.10.41.14.plp+@PHYLLIS.ADM.CS.CMU.EDU (<speaker>Phyllis Pomerantz</speaker>).0>
+Type:     AI Seminar
+<speaker>Who</speaker>:      Melvin Montemerlo / NASA HQ
+Topic:    NASA's Artificial Intelligence Program
+<speaker>Dates</speaker>:    12-Apr-94
+Time:     <stime>3:30 PM</stime>
+Place:    5409 Wean Hall
+Duration: 1 1/2 hours
+<speaker>Host</speaker>:     <speaker>R</speaker>aul Valdes-Perez
+PostedBy: plp+ on 6-Apr-94 at 10:41 from PHYLLIS.ADM.CS.CMU.EDU (<speaker>Phyllis Pomerantz</speaker>)
+<speaker>Abstract</speaker>: 
+
+ Type:     AI Seminar
+ <speaker>Who</speaker>:      Melvin Montemerlo / NASA HQ
+ Topic:    NASA's Artificial Intelligence Program
+ <speaker>Dates</speaker>:    12-Apr-94
+ Time:     <stime>3:30 p.m</stime>.
+ Place:    5409 Wean Hall
+ Duration: 1 1/2 hours
+ <speaker>Host</speaker>:     <speaker>R</speaker>aul Valdes-Perez
+
+		NASA's Artificial Intelligence Program:
+	       Future Directions and the University <speaker>R</speaker>ole
+
+			Melvin Montemerlo
+	      	       NASA, <speaker>Washington D</speaker>.C.
+
+<paragraph><sentence>The goal of my talk is to help the CMU community understand what it
+takes to keep an <speaker>R</speaker>&<speaker>D program alive</speaker>.</sentence>  <sentence>The <speaker>case study</speaker> is NASA's AI
+program.</sentence>  <sentence>It is 10 years old and has grown from $2M/yr to $18M/yr, but
+the road has been <speaker>rocky</speaker>, and the current outlook is <speaker>anything</speaker> but
+clear.</sentence>  <sentence>My <speaker>job</speaker> is two-fold: to educate the <speaker>Washington bureaucracy</speaker> as
+to what can and should be done so that they <speaker><speaker>will</speaker> place good</speaker> and useful
+constraints on the program, and to propagate those constraints to
+those who <speaker>carry</speaker> out the program and help them understand what the
+constraints are and why they were made.</sentence>  <sentence>What are those constraints?</sentence>
+<sentence>How have they changed over the years?</sentence>  <sentence>What does the near future look
+like?</sentence>  <sentence>What roles have university researchers played in the program,
+and what roles might they play in the future?</sentence></paragraph>
+
+<paragraph><sentence>This <speaker>will</speaker> not be a technical talk.</sentence>  <sentence>I <speaker>will</speaker> describe some of the things
+we have done successfully and unsuccessfully, in order to get across
+some lessons learned in the past decade.</sentence></paragraph>
+
+<paragraph><sentence>There are some significant signs that the future <speaker>will</speaker> see different
+approaches to getting research funding and <speaker>carry</speaker>ing out research in
+universities.</sentence>  <sentence>I'll discuss those signs, and open things up to
+interactive discussion.</sentence></paragraph>
+
+ FurtherDetails: For appointments -- <speaker>Phyllis Pomerantz</speaker> (plp@cs) or X8-7897
+
+FurtherDetails: For appointments -- <speaker>Phyllis Pomerantz</speaker> (plp@cs) or X8-7897    

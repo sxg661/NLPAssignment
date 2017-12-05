@@ -1,0 +1,45 @@
+<0.13.4.95.03.24.17.me@H.GP.CS.CMU.EDU (<speaker>Michael Erdmann</speaker>).0>
+Type:     cmu.cs.robotics
+Topic:    <speaker>Upcoming Robotics</speaker> Seminars: Apr 14 none; Apr 21 <speaker>Shree Nayar</speaker>.
+<speaker>Dates</speaker>:    21-Apr-95
+Time:     3:30 - 5:00
+<speaker>Host</speaker>:     Katsushi Ikeuchi, x8-6349
+PostedBy: me on 13-Apr-95 at 03:24 from H.GP.CS.CMU.EDU (<speaker>Michael Erdmann</speaker>)
+Abstract: 
+There is no Robotics Seminar this Friday.
+<speaker>Next Friday's seminar will</speaker> be:
+
+------------------------------------------------------------------------------
+			   ROBOTICS SEMINAR
+
+Friday <speaker>April</speaker> 21, 3:30-5:00
+Refreshments 3:15
+<location>Adamson Wing</location>, Baker Hall
+	           Real-Time Focus Range Sensor
+		   ----------------------------
+
+			  Shree K. Nayar
+
+ 		   Department of Computer Science
+			Columbia University
+			New <speaker>York</speaker>, NY 10027
+
+Structures of dynamic scenes can only be recovered using a real-time
+range sensor. Depth from defocus  offers an elegant solution to fast
+and dense range estimation. <paragraph><sentence>It is computational efficient as it
+circumvents the correspondence problem faced by stereo and the feature
+tracking problem involved in structure from motion.</sentence> However, accurate
+depth estimation requires theoretical and practical solutions to a
+variety of problems including  recovery of textureless surfaces,
+blur estimation, and magnification variations caused by defocusing. 
+<sentence>Both textured and textureless surfaces are recovered using an
+optimized illumination pattern that is projected via the same optical
+path used to acquire images.</sentence> <sentence>A prototype focus range sensor has been
+developed that produces up to 512x480 depth estimates at 30 Hz with
+an accuracy of 0.3%.</sentence></paragraph>
+
+<paragraph><sentence>In addition to the above topic, I'll briefly summarize recent results
+on diffuse reflectance and visual learning.</sentence></paragraph>
+
+ <speaker>Host</speaker>: Katsushi Ikeuchi, x8-6349
+------------------------------------------------------------------------------

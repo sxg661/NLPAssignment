@@ -1,0 +1,53 @@
+<0.28.11.94.13.10.16.mp3r+@J.GP.CS.CMU.EDU (Margaret Profeta).0>
+Type:     cmu.cs.scs
+Topic:    <speaker>POP TALK</speaker>
+<speaker>Dates</speaker>:    2-Dec-94
+Time:     <stime>3:00 PM</stime> - <etime>4:30 PM</etime>
+PostedBy: mp3r+ on 28-Nov-94 at 13:10 from J.GP.CS.CMU.EDU (Margaret Profeta)
+Abstract: 
+                                POP SEMINAR
+
+                       THE TOPOLOGY OF SET CONSENSUS
+
+                              Maurice Herlihy
+
+                             Brown University
+
+                         Friday, <speaker>December</speaker> 2, 1994
+
+                    WeH 8220      <stime>3:00 p.m</stime>. <sentence>- <etime>4:30 p.m</etime>.</sentence>
+     Modern shared-memory multiprocessors are inherently asynchronous:
+     processes can be halted or delayed without warning by interrupts,
+     pre-emption,  or  cache  misses.    In  such  environments, it is
+     desirable to design protocols that  are  wait-free:  any  process
+     that continues to run <speaker>will</speaker> complete its work in a fixed number of
+     steps, regardless of delays or failures by other processes.
+
+     In the past  few  years,  considerable  progress  has  been  made
+     understanding   wait-free   protocols   for   systems   in  which
+     asynchronous processes communicate by reading and writing  shared
+     variables.    Nevertheless, relatively little is known about such
+     protocols in systems in which processes communicate with  certain
+     more powerful synchronization primitives such as test-and-set, or
+     fetch-and-add.  This question has some practical interest,  since
+     many  modern  multiprocessor architectures provide these kinds of
+     built-in primitives.
+
+     <sentence>Some recent partial progress on this question is reviewed.</sentence>    Set
+     consensus,  a  simple  generalization of the well-known consensus
+     problem  is  considered.    Any  synchronization  problem  has  a
+     characteristic  geometric structure, called a simplicial complex,
+     whose topological properties determine  the  circumstances  under
+     which  it  has  a  wait-free protocol.  It is first shown that no
+     synchronization primitive can  implement  set  consensus  if  the
+     primitive's  associated  complex  lacks ``holes'' of sufficiently
+     small dimension.  Then it is shown that  any  protocol  employing
+     set  consensus  as  a  primitive  has itself no ``holes'' below a
+     certain dimension, partially characterizing the problems  it  can
+     solve.  Some suggestive connections between consensus numbers and
+     homology closes this discussion.
+
+      Note: Joint work with <speaker>Sergio Rajsbaum</speaker>, MIT.
+
+     If you would like to talk with <speaker>Professor Herlihy</speaker>, please  contact
+     Marge at 85025 or mp3r@cs for available times.

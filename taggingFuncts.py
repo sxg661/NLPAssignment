@@ -22,6 +22,7 @@ from os.path            import isfile, join
 import NamedEntityFindingFuncts
 import ClassificationFuncts
 import FileReadingFuncts
+import FileWritingFuncts
 import SentenceTaggingFuncts
 import TimeFunct
 
@@ -152,11 +153,11 @@ def get_in_dict(entities, tag_name):
         entities_dict[entity] = tag_name
     return entities_dict
     
-def main():
+def tag_files():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
-    FileReadingFuncts.get_files(path)
-    for file in ["351.txt"]:
+    files = FileReadingFuncts.get_files(path)
+    for file in files[36:]:
         data = FileReadingFuncts.read_file(path,file)
 
         #tags the times
@@ -177,10 +178,8 @@ def main():
         entities_to_tag = get_in_dict(paragraphs,"paragraph")
         data = tag_entities(data, entities_to_tag)
 
-        
+        FileWritingFuncts.writeTaggedFile(data,file)
 
-        
-        print(data)
 
     
     

@@ -1,0 +1,40 @@
+<0.28.10.91.23.00.10.trg+@IUS3.IUS.CS.CMU.EDU (<speaker>Thomas Gross</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    PSC/CS Seminar 11/1 4:00 WeH 5403: <speaker>J. <speaker>Smith</speaker></speaker> of Cray Research
+<speaker>Dates</speaker>:    1-Nov-91
+Time:     4:00
+PostedBy: trg+ on 28-Oct-91 at 23:00 from IUS3.IUS.CS.CMU.EDU (<speaker>Thomas Gross</speaker>)
+Abstract: 
+
+
+		    PSC/Computer Systems Seminar  
+		Friday Nov 1, 1991  <stime>4:00 p.m</stime>.  WeH 5403
+
+               Supercomputer  Interconnection Networks
+
+                          J. E. <speaker>Smith</speaker>
+                       Cray Research, Inc.
+                     Chippewa Falls, WI 54729
+
+     Multistage interconnection networks (<speaker>MINs</speaker>) form the backbone
+     of  traditional vector supercomputers.  First, an historical
+     perspective of <speaker>MINs</speaker> in vector supercomputers is given.  This
+     is  followed  by  the  description  of  an on-going study of
+     large-scale vector-oriented  <speaker>MINs</speaker>.  An  accurate  simulation
+     model is described.  Performance results are then presented;
+     these results are focused on determining the relative impor-
+     tance of several <speaker>MIN characteristics</speaker>.
+
+-----
+Jim <speaker>Smith</speaker> was formerly with the University of Wisconsin where he developed
+the concept of the "Decoupled Access/Execute Architectures".  <sentence>He then went
+on to build such a machine, the ZS-1, for the Astronautics Corp. of <speaker>America</speaker>.</sentence>
+<sentence>After <speaker>Seymour Cray</speaker> left to form Cray Computer, he joined Cray Research as
+computer architect.</sentence>  <sentence>The <speaker>abstract may</speaker> sound a little dry, but I think the
+talk <speaker>will</speaker> not disappoint you, especially if you wonder what is happening in
+this part of the supercomputer world [I don't want to <speaker>say</speaker> more; Cray
+Research after all is the company that developed the Cray X-MP and the 
+Cray Y-MP.]</sentence>  --TRG
+
+9
+

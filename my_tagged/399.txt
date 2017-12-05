@@ -1,0 +1,31 @@
+<0.10.2.93.17.05.59.jass+@cs.cmu.edu (Jaspal Subhlok).0>
+Type:     cmu.cs.scs
+Topic:    <speaker>Re</speaker>: Lecture by <speaker>Rajiv</speaker> Gupta, Univ of Pittsburgh, Feb 12, 9 AM
+Dates:    12-Feb-93
+Time:     <stime>9:00 AM</stime>
+PostedBy: jass+ on 10-Feb-93 at 17:05 from cs.cmu.edu (Jaspal Subhlok)
+<speaker>Abstract</speaker>: 
+
+
+The lecture is on Friday  Feb 12. I wrote a different date at one
+place  inside the message. <paragraph><sentence><speaker>Sorry</speaker> about the confusion.</sentence></paragraph>
+
+jas
+
+In article  jass+@cs.cmu.edu (Jaspal Subhlok) writes:
+>
+>Date:    Feb 12,93
+>Time:    9.00 A.M.
+>Place:   WeH 5409
+>Topic:   Program Dependence Graph and Static Single Assignment forms
+>
+><speaker>Rajiv</speaker> Gupta from University of <location>Pittsburgh will</location> deliver a guest
+>lecture  in the course on "Modern Language Implementation" on
+>Feb 19 at 9.00. <sentence>His <speaker>lecture will focus</speaker> on Program Dependence
+>Graph and Static Single Assignment program representations.</sentence> <sentence>You
+>may wish to attend this lecture, even if you do not attend
+>the class otherwise.</sentence> <sentence>Please contact me (jass@cs) if you wish to
+>speak to <speaker>Rajiv</speaker> while he is here.</sentence>
+>
+>
+

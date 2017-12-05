@@ -1,0 +1,50 @@
+<1.9.2.93.14.31.50.garth+@NIAGARA.NECTAR.CS.CMU.EDU (<speaker>Garth Gibson</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    Change!!: Wed WWC PictureTel Seminar
+<speaker>Dates</speaker>:    10-Feb-93
+Time:     7:15 - <etime>8:15 PM</etime>
+PostedBy: garth+ on 9-Feb-93 at 14:31 from NIAGARA.NECTAR.CS.CMU.EDU (<speaker>Garth Gibson</speaker>)
+Abstract: 
+
+Prof <speaker>Patterson</speaker> has demonstrated classical "absent-minded
+professor" symptoms.  <paragraph><sentence>The abstract posted a few days ago
+is not the talk that he plans to give.</sentence>  <sentence>Instead, he appears
+to be giving the talk we <speaker>saw</speaker> last spring in our Distinguished
+Lecture <speaker>Series</speaker>.</sentence>  <sentence>It was good then, so if you missed it or
+would like a reprise, come tomorrow evening.</sentence>    ----  garth
+
+	         West Coast Computer Science Colloquium
+
+		      Terabytes >> Teraflops
+	Or why work on processors when I/O is where the action is?
+
+			<sentence><speaker>David</speaker> A.</sentence> <speaker>Patterson</speaker>
+	   Professor and Chair, Computer Science Division,
+	  EECS Department, University of California, <speaker>Berkeley</speaker>
+
+                        7:15 - <etime>8:15 pm</etime>
+                        4623 Wean Hall
+                (via Picturetel from <speaker>Berkeley</speaker>)
+                moderated locally by <speaker>Garth Gibson</speaker>
+[[[[[[  This is likely to be similar to the distinguished lecture given by
+	<speaker>Patterson</speaker> here at CMU last spring.    ---  garth  ]]]]]]]
+
+Amdahl's Law tells us with faster processors we
+need faster and larger I/O. <sentence>Unfortunately disks are getting smaller rather
+than faster.</sentence>  <sentence>This talk describes the results of the RAID project
+(Redundant Arrays of Inexpensive Disks), which offers much
+greater performance, capacity, and reliablity from I/O systems.</sentence></paragraph>
+
+<paragraph><sentence>I <speaker>will</speaker> also talk about a new project getting underway called Sequoia 2000,
+which looks at utilizing small helical scan tapes, such as
+digital-audio tapes or video tapes, to offer terabytes of
+storage for the <speaker>price</speaker> of a fileserver.</sentence> <sentence>(Sequoia 2000 is the Digital
+Equipment Corporation funded successor to MIT's Project <speaker>Athena</speaker>;
+it promises terabytes of economical and low latency storage
+for global change scientists at the University of California.)</sentence></paragraph>
+
+<paragraph><sentence>My thesis is that a factor of 1000 increase in storage capacity available
+on most Ethernets <speaker>will</speaker> have a much greater impact than a factor of
+1000 increase in processing speed for a gaggle of scientists.</sentence></paragraph>
+
+----------------------------------------------------------------------------

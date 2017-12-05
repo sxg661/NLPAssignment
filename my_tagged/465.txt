@@ -1,0 +1,57 @@
+<0.14.6.95.14.10.06.cae+@CAE.ADM.CS.CMU.EDU (<speaker>Colleen</speaker> <speaker>A <speaker>Everett</speaker></speaker>).0>
+Type:     cmu.cs.scs
+Topic:    TALK - Jeff Trinkle, <speaker>Texas A</speaker>&M Univ
+<speaker>Dates</speaker>:    16-Jun-95
+Time:     <stime>3:00 PM</stime>
+PostedBy: cae+ on 14-Jun-95 at 14:10 from CAE.ADM.CS.CMU.EDU (<speaker>Colleen</speaker> <speaker>A <speaker>Everett</speaker></speaker>)
+Abstract: 
+
+Hosted by <speaker>Matt Mason</speaker>
+---------------------------------------------------------------------------
+
+     Complementarity Formulations of Multi-rigid-body Contact Problems
+                         Friday, <speaker>June</speaker> 16 at 3:00pm
+                               Wean Hall 5409
+                                Jeff Trinkle
+                         Dept. of Computer Science
+                            <speaker>Texas A</speaker>&M University
+                     College Station, Texas 77843-3112
+                           Email: trink@cs.tamu.edu
+
+I <speaker>will</speaker> present joint work with Jong-Shi Pang and <speaker>Grace Lo</speaker> (Johns Hopkins
+University) and <speaker>Sandra Sudarsky</speaker> (<speaker>Texas A</speaker>&M University) on the
+multi-rigid-body contact problem, which we state as follows:  given a set of
+bodies with multiple concurrent contacts, determine the instantaneous
+accelerations of the bodies and the contact forces (if possible).  <paragraph><sentence>The
+bodies are assumed to be rigid.</sentence>  <sentence>Contacts are assumed to be distributed over
+locally planar patches (which <speaker>may shrink</speaker> to a point).</sentence>  <sentence>Friction forces are
+assumed to obey the maximum work inequality.</sentence></paragraph>
+
+<paragraph><sentence>Several natural complementary relationships exists between the unknown
+contact forces and accelerations.</sentence>  <sentence>For example, the product of the normal
+components of the contact force and relative acceleration at a contact must
+be zero.</sentence>  <sentence>We have formulated the general multi-rigid-body contact problem as
+linear and nonlinear complementarity problems and employed tools from the
+theories of quasi-variational inequalities and complementarity problems to
+prove new existence and uniqueness results.</sentence>  <sentence>These new results apply as long
+as the friction model at each contact obeys the maximum work inequality.</sentence>
+<sentence><speaker>Thus</speaker> the results apply when contacts are assumed to be isolated points with
+isotropic or anisotropic Coulomb friction as well as the more general limit
+surface descriptions proposed by <speaker>Goyal</speaker> and <speaker>Howe</speaker> and <speaker>Cutkosky</speaker>.</sentence></paragraph>
+
+____________________________________________________________________________
+
+Jeffrey C. Trinkle received his bachelor's degrees in Physics (1979) and
+Engineering Science and Mechanics (1979) from Ursinus College and Georgia
+Institute of Technology, respectively.  <sentence>He was a member of the Fiber
+Composites Group at <speaker>Lawrence Livermore</speaker> National Laboratory for two and one
+half years before returning to graduate school in 1982.</sentence>  <sentence>In <speaker>1987</speaker>, he
+received his PhD from the Department of Systems Engineering at the
+University of <location>Pennsylvania</location>.</sentence>  <sentence>Since <speaker>1987</speaker>, he has held faculty positions in
+the Department Mechanical Engineering at the University of Wollongong near
+<speaker>Sydney</speaker>, the Department of Systems and Industrial Engineering at the
+University of Arizona, and the Department of Computer Science at <speaker>Texas A</speaker>&M
+University where he is currently an assistant professor.</sentence>  <sentence><speaker>Dr</speaker>.</sentence> <sentence>Trinkle's
+primary research interests lie in the areas of robotic manipulation
+planning, multibody dynamics, and physically-based animation.
+</sentence>

@@ -1,0 +1,25 @@
+<0.13.12.93.12.01.28.tania+@CS.CMU.EDU (<speaker>Tania E</speaker> <speaker>Marrero</speaker>).0>
+Type:     cmu.cs.scs
+Who:      Maxine Eskenazi - LIMSI/CNRS - ORSAY, FRANCE
+Topic:    Speech Seminar
+<speaker>Dates</speaker>:    20-Dec-93
+Time:     1:30 - 3:30
+PostedBy: tania+ on 13-Dec-93 at 12:01 from CS.CMU.EDU (<speaker>Tania E</speaker> <speaker>Marrero</speaker>)
+Abstract: 
+ Speaker:  Maxine Eskenazi - LIMSI/CNRS - ORSAY, FRANCE
+
+December 20, 1993
+
+1:30 --- 3:30
+4623 Wean Hall
+
+Within the quest to understand, and eventually automatically account for,
+the inherent variability of the speech signal, and in line with the recent
+interest shown by the speech community for "spontaneous" speech, several
+laboratories have undertaken work on the characterisation of speaking
+styles. <sentence>The diverse speaking styles that have been studied <speaker>will first</speaker> be
+presented, then an overview of the <speaker>work will</speaker> be given, based on the end
+goals of each study (ameliorating synthesis, etc.).</sentence> <sentence><speaker>Examples will</speaker> then be
+given of state-of-the-art databases and synthesis.</sentence> <sentence><speaker>Finally</speaker>, a new
+multi-level study under <speaker>way</speaker> at present at <speaker>LIMSI will</speaker> be described.
+</sentence>

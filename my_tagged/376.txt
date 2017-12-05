@@ -1,0 +1,38 @@
+<0.18.9.92.08.29.10.tmeadows@resumix.portal.com (<speaker>Tim Meadows</speaker>).0>
+Type:     cmu.cs.scs
+Who:      Dr.Ted Adelson-Associate <speaker>Professor</speaker> of Vision Science-
+          Media Laboratory and the Dept. of <speaker>Brain</speaker> and Cognitive
+          Science - MIT
+Topic:    Elemental measurements in vision.
+<speaker>Dates</speaker>:    18-Sep-92
+Time:     <stime>3:30 PM</stime> - <etime>5:00 PM</etime>
+Place:    Baker Hall - Adamson Wing
+PostedBy: tmeadows on 18-Sep-92 at 08:29 from resumix.portal.com (<speaker>Tim Meadows</speaker>)
+Abstract: 
+
+RI SEMINAR
+
+ <speaker>WHEN</speaker>:	Friday, Sept. 18, 1992; <stime>3:30 pm</stime> - <etime>5:00 pm</etime>
+	Refreshments will be served by <stime>3:15 pm</stime>
+
+ <speaker>WHERE</speaker>:	Baker Hall - Adamson Wing
+
+ SPEAKER:	Dr.Ted Adelson-Associate <speaker>Professor</speaker> of Vision Science-
+     	Media Laboratory and the Dept. of <speaker>Brain</speaker> and Cognitive
+ 	Science - MIT
+
+ TITLE:	Elemental measurements in vision.
+
+ ABSTRACT:	Posted Earlier
+
+Hosted by :	<speaker>Hagen Schempf</speaker>, x6884
+
+---
+****************|**************************|**************************
+*               |                          |                         *
+*<speaker>Tim Meadows</speaker>    |  Field Robotics Center   | Carnegie Mellon Univ.   *
+*               |                          |                         *
+*412-268-7085   |  Fax: 412-682-1793       | tmeadows@frc.ri.cmu.edu *
+*               |                          |                         *
+**********************************************************************
+

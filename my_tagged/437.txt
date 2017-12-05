@@ -1,0 +1,44 @@
+<0.22.3.94.08.58.01.kk00+@andrew.cmu.edu.0>
+Type:     cmu.cs.scs
+Topic:    March 23 HCI Seminar
+<speaker>Dates</speaker>:    23-Mar-94
+Time:     3:30 - <etime>5:00 PM</etime>
+<speaker>Host</speaker>:     <speaker>Phil Miller</speaker>
+PostedBy: <speaker>Kathleen P</speaker>. <speaker>Kowalski</speaker> on 22-Mar-94 at 08:58 from andrew.cmu.edu
+Abstract: 
+<speaker>Just</speaker> a reminder that tomorrow's HCI Seminar <speaker>will</speaker> be as follows:
+
+Programmable Applications for Scientists and Artists
+
+<speaker>Mike Eisenberg</speaker>
+Department of Computer Science and Institute of Cognitive Science
+University of Colorado, Boulder
+
+Wednesday, March 23
+Wean Hall 5409
+3:30-5pm 
+Programmable applications are software systems that combine the
+learnability and accessibility of direct manipulation interfaces with
+the expressive range of "domain-enriched" programming environments.
+While -- broadly speaking -- the notions of direct manipulation and
+programming have historically been viewed as existing in opposition,
+programmable applications seek to blend language and direct
+manipulation constructs in mutually supportive ways. <paragraph><sentence>This talk <speaker>will</speaker>
+describe some of the issues that <speaker>arise</speaker> in the design of programmable
+applications, and <speaker>will</speaker> present two prototype applications (based on
+the Scheme programming language) for the domains of graphic design and
+computational physics.</sentence></paragraph>
+
+-------
+
+ <speaker>Host</speaker>:  <speaker>Phil Miller</speaker>
+
+To schedule an appointment with <speaker>Mike Eisenberg</speaker> please contact Rebecca
+<speaker>Clark</speaker> at x8-6737.
+
+<paragraph><sentence>Please see /afs/cs/user/dandb/hciseminar.txt for a list of upcoming HCI
+Seminar speakers.</sentence></paragraph>
+
+<sentence>Please contact cmu-hci-request@andrew.cmu.edu to receive
+announcements of human-computer interaction talks and news. 
+</sentence>
