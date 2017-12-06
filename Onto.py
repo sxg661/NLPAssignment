@@ -28,18 +28,14 @@ def collect_topics(data):
     topic = re.compile('Topic:    (.+?)Dates') # the regex
     topics = topic.findall(data)                # find and list the words of the topic
     for topic in topics:                        
-        topics_trim = trim_header(topic)        # removing the "Topic:    " from the topic words
-        topics_split = word_split(topics_trim)  # splitting the words of a possibly multiword topic (doesn't do anything if the topic is one word, eg. Chemistry)
+        topics_split = word_split(topics)  # splitting the words of a possibly multiword topic (doesn't do anything if the topic is one word, eg. Chemistry)
     return topics_split
 
 # the word splitting function       
-def word_split(string):
-    words = word_tokenize(string)
+def word_split(strings):
+    for string in strings:
+        words = word_tokenize(string)
     return words
-
-# the trim header
-def trim_header(topic):    
-    return topic[10:len(topic)]
 
 # if we only have a one-word topic, use this
 def get_synsets_first(topics_split):
