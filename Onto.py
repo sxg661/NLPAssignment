@@ -21,25 +21,21 @@ from nltk.tokenize import word_tokenize
 import re
 
 # our list of things we will consider our ontology once reached
-ontologies = ['discipline.n.01']
+ontologies = ['discipline.n.01', 'communication.n.02', 'act.n.02', 'device.n.01', 'artifact.n.01', 'whole.n.02', 'instrumentality.n.01', 'journey.n.01', 'time_period.n.01', 'problem_solving.n.02', 'attitude.n.01', 'substance.n.01', 'physical_entity.n.01', 'feeling.n.01', 'meeting.n.01', 'passage.n.01', 'attribute.n.02', 'location.n.01', 'process.n.02', 'person.n.01', 'ordering.n.01', 'language_unit.n.01', 'condition.n.01']
 
-# gathering what the topic is from the "Topic:    " part of the emial
+# gathering what the topic is from the "Topic:    " part of the email
 def collect_topics(data):
-    topic = re.compile('Topic:    ' + '[^/n]*') # the regex
+    topic = re.compile('Topic:    (.+?)Dates') # the regex
     topics = topic.findall(data)                # find and list the words of the topic
     for topic in topics:                        
-        topics_trim = trim_header(topic)        # removing the "Topic:    " from the topic words
-        topics_split = word_split(topics_trim)  # splitting the words of a possibly multiword topic (doesn't do anything if the topic is one word, eg. Chemistry)
+        topics_split = word_split(topics)  # splitting the words of a possibly multiword topic (doesn't do anything if the topic is one word, eg. Chemistry)
     return topics_split
 
 # the word splitting function       
-def word_split(string):
-    words = word_tokenize(string)
+def word_split(strings):
+    for string in strings:
+        words = word_tokenize(string)
     return words
-
-# the trim header
-def trim_header(topic):    
-    return topic[10:len(topic)]
 
 # if we only have a one-word topic, use this
 def get_synsets_first(topics_split):
@@ -64,9 +60,12 @@ def get_synsets_last(topics_split):
 
 # from our synsets, pick the first one and assign it to the topic
 def assign_synset(topic_syns):
-    topic_syn_pick = topic_syns[0]
-    return topic_syn_pick
-
+    try:
+        topic_syn_pick = topic_syns[0]
+        return topic_syn_pick
+    except:
+        print("Topic cannot be recognised!")
+    
 # find the hypernym of the topic (works for both one-word and multi-word without variation)
 def find_hypernym(syn_pick):
     t_hyper = syn_pick.hypernyms()
@@ -95,13 +94,16 @@ def make_syn_pick(data):
 # pseudo-recursion
 # keep finding and assigning hypernyms until one of the hypernym's reached is the ontology    
 def hyper_loop_rec(data):
-    hyper_pick = wordnet.synset('dog.n.01')
-    syn_pick = make_syn_pick(data)    
-    while (hyper_pick.name() not in ontologies):
-        f_hyper = find_hypernym(syn_pick)
-        hyper_pick = assign_hypernym(f_hyper)
-        syn_pick = hyper_pick
-        if (hyper_pick.name() in ontologies):
-            print("Ontology found! Our ontology is: " + hyper_pick.name())
-        else:
-            print("We have not reached the desired ontology. Carrying on the search...")
+    hyper_pick = wordnet.synset('dog.n.01') # couldn't initialise to None so I am using a generic synset we are guaranteed not to use to start
+    syn_pick = make_syn_pick(data)
+    try:
+        while (hyper_pick.name() not in ontologies):
+            f_hyper = find_hypernym(syn_pick)
+            hyper_pick = assign_hypernym(f_hyper)
+            syn_pick = hyper_pick
+            if (hyper_pick.name() in ontologies):
+                print("Ontology found! Our ontology is: " + hyper_pick.name())
+            else:
+                print("We have not reached the desired ontology yet. Carrying on the search...")
+    except:
+        print("Ontology cannot be found! The program will now exit!")
