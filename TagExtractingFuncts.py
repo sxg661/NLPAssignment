@@ -35,7 +35,7 @@ def find_tag_matches(tag_name,data):
     closing_tag = "</{}>".format(tag_name)
 
 
-    pattern = re.compile("{}[^<]*{}".format(opening_tag,closing_tag))
+    pattern = re.compile("{}.*?{}".format(opening_tag,closing_tag))
     matches = pattern.findall(data)
 
     return matches
@@ -60,7 +60,10 @@ def get_tag_examples(tag_name, data, tag_dict):
     
     return tag_dict
 
-
+def get_rid_of_tags(data):
+    tagRegEx = "</?[a-zA-Z]+>"
+    data = re.sub(tagRegEx,"",data)
+    return data
 
 
 

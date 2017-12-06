@@ -88,6 +88,8 @@ def tag_named_entities(sent):
 
     print(strict_entities)
     print(broad_entities)
+    
+
 
     #MOVE THESE 2 LINES TO THE ACTUAL MAIN FUNCTION ONCE YOU'VE MADE IT!!!
     tag_names = ["speaker","location"]
@@ -157,7 +159,8 @@ def tag_files():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
     files = FileReadingFuncts.get_files(path)
-    for file in files[36:]:
+    for file in files[175:]:
+        print(file)
         data = FileReadingFuncts.read_file(path,file)
 
         #tags the times

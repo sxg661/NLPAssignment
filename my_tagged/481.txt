@@ -1,0 +1,20 @@
+<0.07.5.92.11.30.02.cary+@CARY.ADM.CS.CMU.EDU (<speaker>Cary Lund</speaker>).0>
+Type:     cmu.cs.scs
+Topic:    Special Seminar, Monday <speaker>May</speaker> 11
+<speaker>Dates</speaker>:    11-<speaker>May</speaker>-92
+Time:     <stime>10:30 AM</stime> - <etime>11:00 AM</etime>
+PostedBy: cary+ on 07-<speaker>May</speaker>-92 at 11:30 from CARY.ADM.CS.CMU.EDU (<speaker>Cary Lund</speaker>)
+<speaker>Abstract</speaker>: 
+
+           Recent Progress in the <speaker>Friend</speaker> 21 <speaker>Project</speaker>
+                     Dr. Hajime Nonogaki
+                       Fujitsu Limited
+                 Monday <speaker>May</speaker> 11, <<stime>10:30 am</stime> - <etime>11:00 am</etime>>
+                          <Wean Hall 8220>
+       The <speaker>Friend</speaker>21 <speaker>Project</speaker> is <speaker>a MITI</speaker> sponsored effort to
+       develop a comfortable personal information system
+       for the 21st century.  A <speaker>major concern</speaker> is the user
+       interface, and one approach under current study is
+       the development of <speaker>rich interface agents</speaker>.  This talk
+       <speaker>will discuss</speaker> the user interface for <speaker>Friend</speaker>21 and
+       present recent progress toward the project's goals.
