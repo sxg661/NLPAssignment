@@ -12,6 +12,7 @@ def get_all_tags(path, file, tag_name):
     #removes the tags from every match
     untagged_matches = []
     for match in tagged_matches:
+        match = match.replace(".","")
         untagged_matches.append(TagExtractingFuncts.get_rid_of_tags(match))
 
     return untagged_matches
@@ -68,10 +69,6 @@ class TagScoreCalculator:
         
         
 
-        
-
-
-    
 def read_in_tags():
     tag_names = ["sentence","paragraph","speaker","location","etime","stime"]
 
@@ -99,7 +96,9 @@ if __name__ == '__main__':
 
     for key in tag_scores.keys():
         tag_scores[key].calculate_scores()
-        tag_scores[key].print() 
+        tag_scores[key].print()
+
+    print("---------------------------------------------")
 
 
 

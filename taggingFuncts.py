@@ -159,8 +159,7 @@ def tag_files():
     path = "untagged/"
     tokenizer = nltk.data.load('tokenizers/punkt/PY3/english.pickle')
     files = FileReadingFuncts.get_files(path)
-    for file in files[175:]:
-        print(file)
+    for file in files:
         data = FileReadingFuncts.read_file(path,file)
 
         #tags the times
@@ -183,6 +182,8 @@ def tag_files():
 
         FileWritingFuncts.writeTaggedFile(data,file)
 
+if __name__ == "__main__":
+    tag_files()
 
     
     
