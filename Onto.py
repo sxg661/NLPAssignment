@@ -1,4 +1,3 @@
-### WHAT'S GOING ON HERE:
 # We are going to use WordNet in order to find the ontology of the emails.
 # Each word has a number of 'senses'. For example, the word 'chemistry' can mean
 # the science, or the 'chemistry' between two people. Each word sense is known as
@@ -25,7 +24,7 @@ ontologies = ['discipline.n.01', 'communication.n.02', 'act.n.02', 'device.n.01'
 
 # gathering what the topic is from the "Topic:    " part of the email
 def collect_topics(data):
-    topic = re.compile('Topic:    (.+?)Dates') # the regex
+    topic = re.compile('Topic:    (.+?)Dates')  # the regex
     topics = topic.findall(data)                # find and list the words of the topic
     for topic in topics:                        
         topics_split = word_split(topics)  # splitting the words of a possibly multiword topic (doesn't do anything if the topic is one word, eg. Chemistry)
@@ -49,22 +48,13 @@ def get_synsets_last(topics_split):
     topic_syns = wordnet.synsets(topic)
     return topic_syns
 
-# LEAVE THAT HERE FOR NOW JUST IN CASE
-# very slow unfortunately - O(n^2) but works fine for non-hashable, like my list
-#def remove_duplicates(list):
-#    s = []
-#    for i in list:
-#        if i not in s:
-#            s.append(i)
-#    return s
-
 # from our synsets, pick the first one and assign it to the topic
 def assign_synset(topic_syns):
     try:
         topic_syn_pick = topic_syns[0]
         return topic_syn_pick
     except:
-        print("Topic cannot be recognised!")
+        pass
     
 # find the hypernym of the topic (works for both one-word and multi-word without variation)
 def find_hypernym(syn_pick):
@@ -79,15 +69,12 @@ def assign_hypernym(t_hyper):
 # big function to pick the synset (made to work for both one-word and multi-word)
 def make_syn_pick(data):
     topics_split = collect_topics(data)    # find the topic of email
-    print(topics_split)
     if (len(topics_split) == 1):
         topic_syns = get_synsets_first(topics_split) # find corresponding synsets
-        print(topic_syns)
         syn_pick_first = assign_synset(topic_syns)
         return syn_pick_first
     else:
         topic_syns = get_synsets_last(topics_split)
-        print(topic_syns)
         syn_pick_last = assign_synset(topic_syns) # assign the first of those synsets to the topic
         return syn_pick_last
 
@@ -102,8 +89,6 @@ def hyper_loop_rec(data):
             hyper_pick = assign_hypernym(f_hyper)
             syn_pick = hyper_pick
             if (hyper_pick.name() in ontologies):
-                print("Ontology found! Our ontology is: " + hyper_pick.name())
-            else:
-                print("We have not reached the desired ontology yet. Carrying on the search...")
+                return hyper_pick.name()
     except:
-        print("Ontology cannot be found! The program will now exit!")
+            pass
