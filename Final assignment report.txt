@@ -1,0 +1,50 @@
+﻿Natural language processing report
+Aikaterini Chelioti									         Sophie Guile
+1581991										                1643360
+axc591@student.bham.ac.uk					                   sxg661@student.bham.ac.uk
+Did time tagging and Ontology						Did Entity Tagging minus 
+											the time tags
+
+The following document is a comprehensive report of the natural language processing system developed by Aikaterini Chelioti and Sophie Guile. Working towards achieving Entity Tagging and Ontology Construction in a large amount of text, we are aiming to briefly outline the functionality of each of these components in as great detail as possible while clarifying each one of us' contribution to the final assignment. It should be noted that the whole implementation was made using Python NLTK.
+
+Entity tagging
+This part of the assignment consists of mainly three parts: the file tagging, where we detect sentences and paragraphs in our data, named entity tagging, in which we spot specific named entities, and time tagging in which we spot the start and end times in our data.
+- File tagging
+For this part we began by loading up the english.pickle tokeniser which successfully split the data into sentences. To ensure that what we are retrieving is a sentence and not something unwanted, like whitespace or “Topic” headers, we compare each token against a regular expression. We then produce a report of the sentence tagged files, in which the precision, recall, and F1 Score are measured.
+Having split the data into sentences, paragraph tagging was made easy since it was now possible to look for blocks of sentences using a regular expression. Just like before, we then produce a report of the paragraph-sentence tagged files, in which the precision, recall, and F1 Score are measured.
+
+- Named Entity Tagging
+In order to find the named entities in our data, it is necessary that we do POS tagging on it first. In order to do that, we used the Names tagger provided, in conjunction with the trigram, bigram, unigram taggers as backoff. We proceeded to develop two grammars that would take combinations of tags that are likely to denote a named entity: a broad grammar and a strict grammar. Proper nouns were precisely picked up by the strict grammar, which would tag them as speaker or location, while the broad grammar would pick up any additional named entities but risk leaving them untagged.
+
+For named entity classification, we went for wikification. We went through the training data and created two files, one containing all the locations and one containing all the speakers. Upon attempting to classify the entity, we'd send it to Wikipedia and get all the relevant words, which we then compared to the words in the two files and spotted the closest matches.
+Key to this process was our implementation of a naive bayes classifier, which looks at each word and check if it matched to a speaker or a location in our two files. The broad grammar in particular automatically tagged the entity if it was found in the two files, otherwise we would resort to our classifier. If the scores for location and speaker had a difference of over 50 we would tag it as the best match, if it was less than 50 the entity would not be classified and as such wouldn't be tagged.
+All in all, the following process was used:
+1) entity extraction with the strict grammar
+2) entity extraction with the broad grammar, storing only the ones not picked up by the strict grammar
+3) check if the extracted entity is a complete match with any of the training entities, if it is, classifiy it
+4) if not, use naive bayes to calculate the best tag match using the difference between scores for the two tags
+5) if the entity was extracted with the strict grammar, classify as best tag match
+6) if the entity was extracted with the broad grammar, classify as best tag match if the difference between scores is greater or equal to 50
+
+Just like before, we proceed to print our report with the precision, recall, and F1 score measurements.
+- Time tagging
+In order to tag time, with no regards to whether it was a start time or an end time, we use a regular expression. For the sake of convenience, we begin by claiming that all the times picked up by this regular expression are start times and give them the tag 'stime.' The times and the tags are placed into a dictionary. We then use another regular expression to pick up end times, with tags 'etime.' We then proceed to find those times in our dictionary and replace their 'stime' tag with 'etime'. The precision, recall and F1 score measurements can also be seen.
+
+
+Ontology construction
+For the Ontology Construction, we took advantage of an online lexical database of English known as Wordnet. Its facilities allowed for simple and organised ontology detection based on the following principles:
+- Each word has one or more 'senses.' An example of multiple word senses can be seen in the word 'chemistry,' which might be referring to the actual science of Chemistry or the 'chemistry' between individuals. Wordnet labels word senses as 'synsets,' and as such each word may have one or more 'synsets' corresponding to it. Each synset has an explicit name: 'chemistry.n.01', for the first word sense, 'chemistry.n.02' for the second, and so on.
+- Each word-synset can have a 'hypernym:' that is, a word describing the general idea this word is trying to describe. For example, the word telephone, with synset 'telephone.n.01', can broadly be classed under 'electronic equipment', making 'electronic_equipment.n.01' telephone's hypernym.
+
+The algorithm in use takes the following steps to achieve correct ontological document classification:
+
+1) First and foremost, it uses regular expressions to retrieve from the given text the rough topic of the passage. This is done by looking at the 'Topic:' and the 'Dates:' header in the text, and extracting the phrase that lies between them as a string. The string then proceeds to be split up into seperate words using Python NLTK's word tokenizer.
+
+2) After we've extracted the topic, we need to find what it means, its synset. However, our topic could be comprised of multiple words. Consider 'Advanced studies in Thermonuclear reactors.' Each word in this topic string has numerous senses, which makes it difficult to detect a single category under which this text will fall. To combat this problem, we have adopted the following conventions:
+- If our topic is a string of just one word, we shall look for the synsets, and consequently the hypernyms of that word.
+- If our topic is a string comprised of more than 1 word, we shall look for the synsets and the hypernyms of the last word. In our topic example, a 'thermonuclear reactor' is a type of reactor, so it makes sense to find information about the 'reactor' rather than 'thermonuclear.'
+- Once synsets for either the first or the last word have been found (depending on the nature of our topic), we assign to the word the very first synset (ie sense) that was found for it.
+
+From this point onwards, we proceed to look for the hypernym connected to the synset we assigned to our word. Once one has been found, we look into our pre-defined list of acceptable ontologies. If this hypernym can be found in our list of ontologies, the program exits and prints that our ontology has been found along with its name. This process will repeat until we find a desirable hypernym-ontology in which case we smoothly print and exit. If for whatever reason the algorithm fails to find a document's ontology, it shall print None and proceed to exit.
+
+Finally, the file OntoFileRead.py reads in all of the text data and proceeds to find the ontologies and produce a report for each file. The recall, precision, F1 score measurement can be found at the bottom of the report.

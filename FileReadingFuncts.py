@@ -3,6 +3,8 @@ from os                 import listdir
 from os.path            import isfile, join
 import TagExtractingFuncts
 
+import codecs
+
 def get_files(path):
     #gets the file paths to the training data
     files = [f for f in listdir(path) if isfile(join(path, f))]
@@ -19,12 +21,17 @@ def read_file(path, file):
     file_handle.close()
     return data
 
-def read_wiki(file):
-    file = open(file, "r")
+def read_wiki(wikifile):
+    fileLines = codecs.open(wikifile, 'r', 'UTF-8')
+    
 
     lines = []
 
-    for line in file:
+    print(fileLines)
+
+    print(wikifile)
+
+    for line in fileLines:
         lines.append(line.replace("\n",""))
 
     return lines
@@ -38,3 +45,4 @@ def read_all_lines(file):
     for line in file:
         lines.append(TagExtractingFuncts.lose_tags(line))
     return lines
+    

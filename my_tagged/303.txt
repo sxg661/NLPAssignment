@@ -60,5 +60,4 @@ goal in a cluttered environment given no initial map information.</sentence>  <s
 algorithm and the results <speaker>will</speaker> be presented.</sentence> 
 
  <sentence><speaker>Host</speaker>: 		Yangsheng Xu (xu+@cs.cmu.edu)
- Appointment: 	Ava Cruse (avac@cs.cmu.edu)
-</sentence>
+ <speaker>Appointment</speaker>: 	Ava Cruse (avac@cs.cmu.edu)</sentence>

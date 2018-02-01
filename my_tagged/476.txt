@@ -21,7 +21,7 @@ Current  programming  languages  are  monoliths: they generally
 cannot be composed with one another and each presumes it is the
 only  language  to  be  used for solving problems.  In order to
 specify problem solutions in the <speaker>way</speaker> most suited to the problem
-domain,   I   have  previously  <speaker>advocated</speaker>  the  use  of  `local
+domain,   I   have  previously  advocated  the  use  of  `local
 formalisms' --- languages designed by the  user  for  just  the
 problem  at  hand.  In this talk, I describe tools which enable
 monolithic  languages  to  be  broken  up  into   parameterized
@@ -34,5 +34,5 @@ expressions, statements, and procedures.
  <speaker>Host</speaker>: David Garlan
 
 If  you  are interested in speaking with <speaker>David Wile</speaker> while he is
-here on Thursday <speaker>April</speaker> 16th, please send e-mail to <speaker>Cary Lund</speaker> at
+here on Thursday <speaker><speaker>April</speaker> 16th</speaker>, please send e-mail to <speaker>Cary Lund</speaker> at
 cary@cs.
